@@ -22,6 +22,9 @@ $ composer require phphleb/docs
 ```bash
 $ php console phphleb/docs add
 ```
+```bash
+$ composer dumpautoload
+```
 
 Remove the route for the main page in the file /routes/map.php
 
@@ -39,6 +42,10 @@ $ composer update phphleb/docs
 
 ```bash
 $ php console phphleb/docs add
+```
+
+```bash
+$ composer dumpautoload
 ```
 
 ```bash
