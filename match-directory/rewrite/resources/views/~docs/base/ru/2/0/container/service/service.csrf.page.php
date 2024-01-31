@@ -51,7 +51,7 @@ use Phphleb\Docs\Src\Paragraph;
 <?= Paragraph::h2('field()') ?>
 
 <p>
-    Метод <span class="notranslate">field()</span> возвращает <span class="notranslate">HTML</span>-контент для вставки в форму для предачи токена с другими данными.
+    Метод <span class="notranslate">field()</span> возвращает <span class="notranslate">HTML</span>-контент для вставки в форму для передачи токена с другими данными.
 </p>
 
 <?= Paragraph::h2('validate()') ?>
