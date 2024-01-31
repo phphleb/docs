@@ -19,14 +19,9 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     Вполне возможно назначить ключ в контейнере как класс самого сервиса, но в дальнейшем с этим могут быть проблемы, так как код приложения будет завязан на конкретный класс или интерфейс библиотеки, с невозможностью его подменить.
 </p>
-<p>
-    Создадим интерфейс, который будет стандартно описывать использование мьютексов:
-</p>
-
-<?= Code::fromFile('@views/docs/code/extra/extended/container/add/mutex.container.interface.php');  ?>
 
 <p>
-    Внешние библиотеки лучше подключать к проекту используя паттерн Адаптер, интерфейс которого и будет ключом сервиса в контейнере.
+    Внешние библиотеки лучше подключать к проекту используя паттерн Адаптер, класс которого и будет ключом сервиса в контейнере.
 </p>
 
 <?= Code::fromFile('@views/docs/code/extra/extended/container/add/mutex.container.class.php');  ?>
@@ -36,7 +31,7 @@ use Phphleb\Docs\Src\Paragraph;
     Несмотря на то, что это удобная директория для примеров, структурно папка с Сервисами должна находиться рядом с логикой проекта.
 </p>
 <p>
-    Теперь добавим библиотеку в контейнер по созданному интерфейсу:
+    Теперь добавим библиотеку в контейнер по созданному классу:
 </p>
 
 <?= Code::fromFile('@views/docs/code/extra/extended/container/add/mutex.container.container.php');  ?>
@@ -45,7 +40,7 @@ use Phphleb\Docs\Src\Paragraph;
     На примере видно, что в метод <span class="notranslate">rollback()</span> добавлен сброс состояния для подключенной библиотеки мьютексов, которая поддерживает асинхронность.
 </p>
 <p>
-    После добавления новый сервис доступен из контейнера по этому интерфейсу как <span class="notranslate">singleton</span>.
+    После добавления новый сервис доступен из контейнера по этому классу как <span class="notranslate">singleton</span>.
 </p>
 
 <?= Code::fromFile('@views/docs/code/extra/extended/container/add/mutex.container.code.php', false);  ?>
@@ -67,10 +62,6 @@ use Phphleb\Docs\Src\Paragraph;
 </p>
 
 <?= Code::fromFile('@views/docs/code/extra/extended/container/add/mutex.method.method.php', false);  ?>
-
-<p class="hl-info-block">
-    Вполне возможно было бы обойтись без дополнительного интерфейса и добавить Адаптер по его классу в контейнер, но в случае использования другой библиотеки мьютексов, вам не нужно было бы переписывать реализацию данного класса, был бы создан новый класс на основе текущего.
-</p>
 
 
 <?php insertTemplate('/docs/ru/authors'); ?>

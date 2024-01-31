@@ -1,5 +1,5 @@
 <?php
-use App\Bootstrap\Services\MutexServiceInterface;
+use App\Bootstrap\Services\MutexService;
 use Hleb\Static\Container;
 
-$mutex = Container::get(MutexServiceInterface::class);
+$mutex = Container::get(MutexService::class);

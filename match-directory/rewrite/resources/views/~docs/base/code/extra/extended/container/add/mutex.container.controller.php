@@ -1,4 +1,4 @@
 <?php
-use App\Bootstrap\Services\MutexServiceInterface;
+use App\Bootstrap\Services\MutexService;
 
-$mutex = $this->container->get(MutexServiceInterface::class);
+$mutex = $this->container->get(MutexService::class);

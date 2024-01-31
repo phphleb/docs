@@ -4,7 +4,6 @@
 namespace App\Bootstrap;
 
 use App\Bootstrap\Services\MutexService;
-use App\Bootstrap\Services\MutexServiceInterface;
 use Hleb\Constructor\Containers\BaseContainerFactory;
 use Phphleb\Conductor\FileMutex;
 use Phphleb\Conductor\Src\MutexDirector;
@@ -15,7 +14,7 @@ final class ContainerFactory extends BaseContainerFactory
     {
         self::has($id) or self::$singletons[$id] = match ($id) {
             // New service as singleton.
-            MutexServiceInterface::class => new MutexService(new FileMutex()),
+            MutexService::class => new MutexService(new FileMutex()),
 
             // ... //
             default => null
