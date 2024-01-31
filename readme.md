@@ -22,6 +22,10 @@ $ composer require phphleb/docs
 ```bash
 $ php console phphleb/docs add
 ```
+
+Remove the route for the main page in the file /routes/map.php
+
+Run the project locally:
 ```bash
 $ APP_DEBUG=false php -S localhost:8000 -t public
 ```
