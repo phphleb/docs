@@ -1,0 +1,13 @@
+{
+  "component": "phphleb/docs",
+  "name": "Documentation",
+  "description": "Project with framework documentation",
+  "directory": "match-directory",
+  "settings": {
+    "docs": {
+       "name": "design",
+       "default": "base",
+       "select": ["base"]
+     }
+  }
+}

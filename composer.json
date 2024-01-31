@@ -1,0 +1,32 @@
+{
+    "name": "phphleb/docs",
+    "description": "Project with HLEB2 framework documentation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Foma Tuturov",
+            "email": "fomiash@yandex.ru"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Phphleb\\Docs\\": "/"
+        },
+        "exclude-from-classmap": [
+            "/match-directory/"
+        ]
+    },
+    "require": {
+        "php": ">=8.2.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "phphleb/framework": ">=2.0",
+        "phphleb/updater": "*",
+        "phphleb/adminpan": "dev-master"
+    },
+    "minimum-stability": "dev"
+}

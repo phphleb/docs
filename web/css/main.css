@@ -1,0 +1,452 @@
+#hl-pan-menu-center-content h2 {
+    color: #1b7070;
+    font-family: "Font UI", -apple-system, sans-serif;
+    font-weight: 500;
+}
+
+#hl-pan-over {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.hl-line-gh {
+    display: block;
+    float: right;
+    padding: 11px 12px 0 0;
+    opacity: 1;
+    cursor: pointer;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    color: #bacadc;
+}
+
+.hl-line-gh:hover {
+    opacity: 0.9;
+}
+
+#hl-pan-content p {
+    display: block;
+    max-width: 540px;
+    color: #111;
+    line-height: 1.7;
+    font-family: "Font UI", -apple-system, sans-serif;
+    font-size: 16px;
+    margin-left: 18px;
+}
+
+.notranslate {
+    display: inline-block;
+    font-family: "Arial", serif;
+    margin: 0 1.5px 0 2px;
+}
+
+b > .notranslate, .notranslate > b, a > .notranslate, .notranslate > a {
+    margin: 0;
+}
+
+.hl-pan-route, .hl-pan-link, .hl-pan-menu-list button {
+    color: #2f343d !important;
+}
+
+.hl-select-block {
+    position: relative;
+    right: 13px;
+    display: block;
+    border: 3px solid #9eec9e;
+    border-radius: 3px;
+    color: black;
+    padding: 7px 5px 5px 10px;
+}
+
+#hl-pan-content a:hover .notranslate {
+    text-decoration: underline;
+}
+
+#hl-pan-content b {
+    font-weight: bolder;
+    color: black;
+    font-family: "Verdana", "Arial", serif;
+}
+
+
+#hl-pan-content a:not(.hl-anchor) {
+    color: #114b88;
+    text-decoration: none;
+}
+
+#hl-pan-content a:hover {
+    text-decoration: underline;
+}
+
+#hl-pan-content {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+#hl-beta {
+    position: absolute;
+    left: 50px;
+    top: 2px;
+    color: #d91c1c;
+    z-index: 100;
+}
+
+#hl-pan-content h1, #hl-pan-content h2, #hl-pan-content h3 {
+    margin: 2px 0;
+    font-family: "Font UI", -apple-system, sans-serif;
+    font-weight: 500;
+}
+
+#hl-pan-menu-center-content a {
+    text-decoration: none;
+}
+
+.hl-info-block {
+    padding: 15px 20px;
+    background-color: #f6f4f4;
+    border-left: 5px solid #287bd5;
+}
+
+.hl-authors {
+    margin-top: 60px;
+    display: inline-block;
+    padding: 16px 10px 0 10px;
+    color: #777;
+    font-size: 16px;
+}
+
+.hl-link-outer {
+    display: inline-block;
+    padding: 10px 30px 20px 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #1b7070;
+    border: 1px solid lightgrey;
+}
+
+.hl-top {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hl-link {
+    font-size: 16px;
+}
+
+.hl-text-block {
+    display: inline-block;
+    padding: 16px 50px 20px 16px;
+    margin-right: 0;
+    margin-left: 17px;
+    background-color: #f6f4f4;
+    border: 1px solid #bacadc;
+    width: max-content;
+    max-width: calc(100% - 80px);
+    overflow: auto;
+    font-size: 14px;
+}
+
+.hl-dir-block {
+    background-color: #ffffff;
+    padding: 17px 50px 20px 17px;
+    border: 1px solid #bacadc;
+}
+
+.hl-danger-block {
+    display: block;
+    padding: 15px 20px;
+    background-color: #fff7e9;
+    border-left: 5px solid #ffab19;
+}
+
+.hl-copy-block {
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    float: right;
+    left: 55px;
+    bottom: 3px;
+    padding: 2px;
+    vertical-align: center;
+    opacity: 0;
+    transition: opacity 0.2s 1s;
+}
+
+.hl-code:hover .hl-copy-block {
+    opacity: 1;
+}
+
+#hl-pan-company-logo {
+    visibility: visible;
+}
+
+.hl-copy-block img {
+    width: 28px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.hl-copy-selected {
+    opacity: 1;
+    outline: 2px solid blue;
+}
+
+#hl-pan-content .hl-bash-block {
+    display: block;
+    padding: 20px 40px 20px 15px;
+    background-color: #f6f5f5;
+    border-left: 4px solid #dedcdc;
+    overflow: auto;
+    font-size: 16px;
+    color: #565555;
+    white-space: nowrap;
+    max-width: calc(92% - 50px);
+    width: max-content;
+    letter-spacing: 1px;
+}
+
+.hl-not-selected {
+    display: inline-block;
+    user-select: none;
+    margin-right: 8px;
+    font-weight: bolder;
+}
+
+.hl-footer {
+    margin-top: 30px;
+    border-top: 2px solid #b9b8b8;
+    padding: 8px 20px 30px 0;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
+#hl-pan-content .hl-footer a {
+    color: #777;
+    text-decoration: underline;
+}
+
+.hl-hindex {
+    position: relative;
+}
+
+.hl-hindex .hl-anchor {
+    color: #FFA900;
+    margin-right: 2px;
+    display: inline-block;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 22px;
+}
+
+.hl-hindex .hl-anchor:hover {
+    opacity: 0.7;
+}
+
+.hl-empty-anchor {
+    display: inline-block;
+    width: 4px;
+}
+
+.hl-directory-dir {
+    color: #f1a84f;
+    font-weight: bolder;
+}
+
+.hl-directory-file {
+    color: #1b7070;
+    font-weight: bolder;
+}
+
+.hl-directory-separator {
+    color: #969696;
+}
+
+
+.hl-directory-point {
+    color: #079d32;
+    font-weight: bolder;
+}
+
+#hl-pan-content h1, #hl-pan-content h2, #hl-pan-content h3 {
+    color: #222;
+}
+
+::selection {
+    text-shadow: none !important;
+    background: #287bd5;
+    color: #ffffff;
+}
+
+.hl-right-title {
+    color: #1b7070;
+    display: none;
+    font-family: "Font UI", -apple-system, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.hl-code {
+    display: block;
+    padding: 10px 60px 15px 10px;
+    margin: 4px 0 25px 15px;
+    background-color: #fafbfc;
+    border: 1px solid #eeeded;
+    overflow: auto;
+    border-top: 1px solid #d3d3d3;
+    line-height: 1.4;
+    max-width: calc(92% - 55px);
+    width: max-content;
+    letter-spacing: 0.7px;
+    height: max-content;
+}
+
+.hl-code pre {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.hl-comment {
+    color: darkgrey;
+    font-style: italic;
+}
+
+.hl-default {
+    color: #05056c;
+}
+
+.hl-html {
+    color: #1b7070;
+    font-family: Arial, serif;
+    font-size: 14px;
+}
+
+.hl-keyword {
+    color: black;
+}
+
+.hl-string {
+    color: darkgreen;
+}
+
+.hl-variable {
+    color: maroon;
+}
+
+.hl-comment u {
+    color: gray;
+}
+
+.hl-annotation {
+    color: #8d7201;
+}
+
+.hl-nowrap {
+    white-space: nowrap;
+}
+
+#hl-pan-content .hl-footer p {
+    max-width: 100%;
+    color: #777;
+}
+
+#hl-pan-content  .hl-search-block {
+    display: flex;
+    align-items: stretch;
+}
+
+.hl-search {
+    display: inline-block;
+    padding: 6px;
+    margin-right: 0;
+    border: 1px solid black;
+    width: 200px;
+    height: 22px;
+    font-size: 16px;
+}
+
+.hl-search-title a {
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: underline!important;
+}
+
+.hl-search-text {
+    font-weight: normal;
+}
+
+.hl-search-error {
+    color: #bcd0d0 !important;
+}
+
+.hl-search-button {
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #1b7070;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.hl-search-result {
+    margin-bottom: 200px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #hl-pan-company-logo {
+       visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hl-right-title {
+        display: inline-block;
+    }
+
+    #hl-pan-content .hl-footer p {
+        max-width: 100%;
+        color: #777;
+        line-height: 2;
+    }
+
+    #hl-pan-content .hl-code,  #hl-pan-content .hl-text-block, #hl-pan-content .hl-bash-block {
+        max-width: calc(100% - 90px);
+    }
+    .hl-copy-block {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Font UI';
+    src: url('/hlresource/docs/v20/font/ui') format('woff2');
+}
+/**
+#hl-pan-content p a[href^="https://"]:not([href*="phphleb.ru"]):after,
+#hl-pan-content p ul a[href^="https://"]:not([href*="phphleb.ru"]):after {
+ */
+#hl-pan-content p a[href^="https://"]:after,
+#hl-pan-content p ul a[href^="https://"]:after {
+    position: relative;
+    right: 1px;
+    font-family: fontawesome, serif;
+    font-size: 1.0em;
+    content: "\2934";
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#hl-pan-content .hl-footer a:after {
+    content: "" !important;
+}

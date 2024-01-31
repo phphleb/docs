@@ -1,0 +1,124 @@
+html {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: white;
+    font-family: "Font UI", -apple-system, sans-serif;
+    color: #414098;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    left: 0;
+    top: 0;
+    background: linear-gradient(white, #f8f8f8);
+    overflow: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#hl-main-title {
+    margin: 0;
+    padding: 40px 10px 10px 10px;
+    font-size: 77px;
+}
+
+#hl-main-description {
+    display: block;
+    font-size: 30px;
+    color: #d5331a;
+    margin: 0 10px 30px 10px;
+    font-weight: bolder;
+}
+
+.hl-nowrap {
+    white-space: nowrap;
+}
+
+.hl-link {
+    width: 240px;
+    font-size: 18px;
+    padding: 8px 0;
+    margin: 14px 10px 10px 24px;
+    border: 1px solid #414098;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.hl-link a {
+    cursor: pointer;
+    color: #232273;
+    text-decoration: none;
+}
+
+.hl-link a:hover {
+    color: #504ebb;
+}
+
+#hl-footer {
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
+    color: black;
+    width: calc(100% - 50px);
+}
+
+#hl-header-line {
+    z-index: 2;
+    position: fixed;
+    right: -80px;
+    top: 15px;
+    display: block;
+    width: 250px;
+    padding: 10px 0 6px 0;
+    text-align: center;
+    -webkit-box-shadow: -1px 1px 16px -6px rgba(13, 13, 13, 0.72);
+    -moz-box-shadow: -1px 1px 16px -6px rgba(13, 13, 13, 0.72);
+    box-shadow: -1px 1px 16px -6px rgba(13, 13, 13, 0.72);
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+#hl-header-line img:hover {
+    opacity: 0.8;
+}
+
+.hl-code-backend {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 283px;
+    height: 198px;
+}
+
+.hl-demo-index-page {
+    padding: 3px 0 0 50px;
+    color: #d5331a;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Font UI';
+    src: url('/hlresource/docs/v20/font/ui') format('woff2');
+}
+
+@media only screen and (max-width: 760px) {
+    .hl-code-backend {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #hl-footer {
+        position: relative;
+        display: block;
+        margin-top: 70px;
+        padding: 0;
+        text-align: center;
+    }
+}
