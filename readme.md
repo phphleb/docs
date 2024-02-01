@@ -45,10 +45,6 @@ $ php console phphleb/docs add
 ```
 
 ```bash
-$ composer dumpautoload
-```
-
-```bash
 $ php console --clear-cache
 ```
 
@@ -56,4 +52,7 @@ $ php console --clear-cache
 $ php console --clear-routes-cache
 ```
 
+```bash
+$ composer dumpautoload
+```
 
