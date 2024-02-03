@@ -25,6 +25,10 @@ use Phphleb\Docs\Src\Paragraph;
     Данные массива доступны в методе <span class="notranslate">Hleb\Static\Router::data()</span> или через контейнер.
 </p>
 
+<p class="hl-info-block">
+    Класс middleware должен быть унаследован от <span class="notranslate">Hleb\Base\Middleware</span>.
+</p>
+
 <?= Paragraph::h2('Возвращаемые значения') ?>
 
 <p>

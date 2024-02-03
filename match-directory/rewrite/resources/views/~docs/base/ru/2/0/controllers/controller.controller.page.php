@@ -15,6 +15,11 @@ use Phphleb\Docs\Src\Paragraph;
     Этот метод указывает на класс контроллера и его выполняемый метод.
     При совпадении — фреймворк создаёт объект этого класса и вызывает метод.
 </p>
+
+<p class="hl-info-block">
+    Класс контроллера должен быть унаследован от <span class="notranslate">Hleb\Base\Controller</span>.
+</p>
+
 <p>
     Фреймворк производит поиск контроллера в папке <span class="notranslate">/app/Controllers/</span> согласно его <span class="notranslate">namespace</span>.
     Вот код контроллера по умолчанию:
