@@ -30,7 +30,7 @@ use Phphleb\Docs\Src\Paragraph;
     Контроллер модуля должен быть унаследован от <span class="notranslate">Hleb\Base\Module</span>.
 </p>
 <p class="hl-info-block">
-    Для того чтобы загрузчик классов Composer составил карту классов для модулей, добавьте в раздел 'classmap' файла '/composer.json' строчку с названием папки модулей ("modules/").
+    Для того чтобы загрузчик классов <span class="notranslate">Composer</span> составил карту классов для модулей, добавьте в раздел <span class="notranslate">"autoload" > "classmap"</span> файла <span class="notranslate"><b>/composer.json</b></span> строчку с названием папки модулей (<span class="notranslate">"modules/"</span>).
 </p>
 
 <?= Paragraph::h2('Создание модуля') ?>
