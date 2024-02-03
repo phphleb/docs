@@ -26,6 +26,10 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/controller/module/example.route.php', false);  ?>
 
+<p class="hl-info-block">
+    Контроллер модуля должен быть унаследован от <span class="notranslate">Hleb\Base\Module</span>.
+</p>
+
 <?= Paragraph::h2('Создание модуля') ?>
 
 <p>
