@@ -41,6 +41,13 @@ use Phphleb\Docs\Src\Paragraph;
     Если вы перейдёте в созданную командой директорию <span class="notranslate">new_project</span>, то увидите в ней файлы проекта, готовые для использования.
 </p>
 
+<?= Paragraph::h2('Локальная разработка с Docker') ?>
+
+<p>
+    Чтобы попробовать возможности фреймворка и развернуть локальную разработку из <span class="notranslate">Docker</span>-образа используйте
+    репозиторий <a href="https://github.com/phphleb/toaster" target="_blank"><span class="notranslate">phphleb/toaster</span></a>.
+</p>
+
 <?= Paragraph::h2('Установка при помощи Composer') ?>
 
 <p>
