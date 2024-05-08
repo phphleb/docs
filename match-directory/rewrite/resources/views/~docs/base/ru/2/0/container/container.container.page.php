@@ -84,6 +84,9 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     Более подробно создание нового сервиса рассматривается на <a href="<?= Link::url('docs.2.0.container.extended.add.page'); ?>">примере добавления</a> реальной библиотеки.
 </p>
+<p>
+    Создание взаимозависимых сервисов описано в разделе <a href="<?= Link::url('docs.2.0.container.extended.prof.page'); ?>">нестандартное использование контейнера</a>.
+</p>
 
 
 <?= Paragraph::h2('Функция rollback() контейнера') ?>

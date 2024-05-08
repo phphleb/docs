@@ -21,6 +21,7 @@ use App\Controllers\Docs\{AboutController,
     Extra\Extended\Console\TaskArgController,
     Extra\Extended\Console\TaskNameController,
     Extra\Extended\Container\AddServiceController,
+    Extra\Extended\Container\AddSpecialController,
     Extra\Extended\Container\ReplaceServiceController,
     Extra\Extended\Console\GenerateMvcController,
     Extra\Extended\WebConsoleController,
@@ -248,6 +249,10 @@ Route::toGroup()
         Route::get('/container/add')
             ->page('docsv20', AddServiceController::class)
             ->name('docs.2.0.container.extended.add.page');
+
+        Route::get('/container/special')
+            ->page('docsv20', AddSpecialController::class)
+            ->name('docs.2.0.container.extended.prof.page');
 
         Route::get('/web/console')
             ->page('docsv20', WebConsoleController::class)
