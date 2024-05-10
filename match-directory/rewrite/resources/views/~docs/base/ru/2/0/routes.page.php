@@ -127,6 +127,11 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     В данном случае метод <span class="notranslate"><b>prefix()</b></span>, добавленный к группе, распространяет своё действие на все маршруты в ней.
 </p>
+<p>
+    Группы могут быть вложены в другие группы. Также существует альтернативный синтаксис для групп:
+</p>
+
+<?= Code::fromFile('@views/docs/code/routes/group.example2.php', false);  ?>
 
 <?= Paragraph::h2('Именованные маршруты') ?>
 
