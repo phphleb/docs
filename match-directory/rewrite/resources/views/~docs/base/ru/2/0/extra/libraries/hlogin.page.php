@@ -35,7 +35,7 @@ use Phphleb\Docs\Src\Paragraph;
     Будет предложено выбрать тип дизайна из нескольких:
 </p>
 
-<p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console phphleb/hlogin --add</p>
+<p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console phphleb/hlogin add</p>
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>composer dump-autoload</p>
 
@@ -223,7 +223,7 @@ use Phphleb\Docs\Src\Paragraph;
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>composer update phphleb/hlogin</p>
 
-<p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console phphleb/hlogin --add</p>
+<p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console phphleb/hlogin add</p>
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>composer dump-autoload</p>
 
