@@ -9,6 +9,9 @@ use Phphleb\Docs\Config;
     Группа поддержки в Телеграм - <a href="https://t.me/phphleb" target="_blank">@phphleb</a>
 </p>
 <p>
+    Обучающие видео-материалы на <a href="https://www.youtube.com/@php-framework-hleb2" target="_blank">YouTube</a> и <a href="https://rutube.ru/channel/38328169/" target="_blank">Rutube</a>.
+</p>
+<p>
     <a href="https://ocrmnolblog.ru/topic/framework-hleb-and-libraries/questions" target="_blank">Задать вопрос</a> в блоге, который сделан с использованием <span class="hl-nowrap">фреймворка <span class="notranslate">HLEB</span>.</span>
 </p>
 <p>

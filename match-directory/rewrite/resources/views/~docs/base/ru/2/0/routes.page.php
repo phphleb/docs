@@ -70,6 +70,18 @@ use Phphleb\Docs\Src\Paragraph;
     В случае отсутствия адрес все равно совпадёт с этим маршрутом, но значение <span class="notranslate">'id'</span> будет равно NULL.
 </p>
 
+<?= Paragraph::h2('Значения по умолчанию для динамических адресов') ?>
+
+<p>
+  Пример динамического маршрута в котором указаны значения для <span class="notranslate">second</span> и <span class="notranslate">third</span> именованных частей.
+</p>
+
+<?= Code::fromFile('@views/docs/code/routes/default.dynamic.parts.php', false);  ?>
+
+<p>
+    Аналогично <span class="notranslate">'/example/{first}/two/three?'</span>, только в данных <span class="notranslate">Request</span> будут добавлены к уже имеющемуся динамическому параметру <span class="notranslate">'first'</span> дополнительные значения <span class="notranslate">['second' => 'two', 'third' => 'three']</span>. Если конечный параметр отсутствует, то будет равен <span class="notranslate">null</span>.
+</p>
+
 <?= Paragraph::h2('Вариативные адреса') ?>
 
 <p>

@@ -17,7 +17,11 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     Начальная версия 2.0.0 фреймворка  выпущена в феврале 2024 г.<br>
     В новой версии реализована поддержка асинхронного выполнения, фреймворк можно использовать с такими технологиями как <span class="notranslate">RoadRunner</span> и <span class="notranslate">Swoole</span>.<br>
-    Много внимания было уделено быстродействию и гибкости сопровождения, реализована совместимость с <span class="notranslate">PSR</span>, добавлен сервисный контейнер вместе с реализацией <span class="notranslate">Dependency Injection</span>  и многое другое.
+    Много внимания было уделено быстродействию и гибкости сопровождения, реализована совместимость с <span class="notranslate">PSR</span>, добавлен сервисный контейнер вместе с реализацией <span class="notranslate">Dependency Injection</span> и многое другое.
+</p>
+
+<p>
+    Поддерживает рекомендации <span class="notranslate">PSR-1</span>, <span class="notranslate">PSR-2</span>, <span class="notranslate">PSR-3</span>, <span class="notranslate">PSR-4</span>,<span class="notranslate">PSR-7</span>, <span class="notranslate">PSR-11</span>, <span class="notranslate">PSR-12</span>, <span class="notranslate">PSR-16</span> без обязательности их использования в разработке.
 </p>
 
 <?= Paragraph::h2('Предназначение') ?>

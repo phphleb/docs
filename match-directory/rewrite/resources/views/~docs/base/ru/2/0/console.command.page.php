@@ -109,6 +109,16 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/task/result.task.class.php', false);  ?>
 
+<?= Paragraph::h2('Указание цвета для текста в терминале') ?>
+
+<p>
+    Для вывода всего или части текста в одном из базовых цветов в терминале нужно использовать специально предназначенный метод <span class="notranslate">color()</span> в команде.<br>
+    Например:
+</p>
+
+<?= Code::fromFile('@views/docs/code/task/color.task.example.php');  ?>
+
+
 <?= Paragraph::h2('Ограничения команд через атрибуты') ?>
 
 <p>
