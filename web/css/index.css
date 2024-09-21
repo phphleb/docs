@@ -41,6 +41,7 @@ body {
 }
 
 .hl-link {
+    position: relative;
     width: 240px;
     font-size: 18px;
     padding: 8px 0;
@@ -48,6 +49,7 @@ body {
     border: 1px solid #414098;
     border-radius: 6px;
     background-color: white;
+    z-index: 100;
 }
 
 .hl-link a {
