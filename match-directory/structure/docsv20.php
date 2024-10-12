@@ -338,6 +338,19 @@ return [
                         ],
                         [
                             'name' => [
+                                'ru' => 'Асинхронность',
+                            ],
+                            'section' => [
+                                [
+                                    'route' => 'docs.2.0.async.async.interface.page',
+                                    'name' => [
+                                        'ru' => 'Сброс состояния после запроса',
+                                    ],
+                                ],
+                            ]
+                        ],
+                        [
+                            'name' => [
                                 'ru' => 'Контейнер и сервисы',
                             ],
                             'section' => [
@@ -367,7 +380,7 @@ return [
                                 'ru' => 'Веб-консоль',
                             ],
                         ]
-                    ]
+                    ],
                 ],
                 [
                     'route' => 'docs.2.0.testing.page',

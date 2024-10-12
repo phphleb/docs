@@ -17,6 +17,7 @@ use App\Controllers\Docs\{AboutController,
     Data\SearchDataController,
     DirectoryController,
     EventController,
+    Extra\Extended\Async\AsyncInterfaceController,
     Extra\Extended\Console\BowlingGameController,
     Extra\Extended\Console\TaskArgController,
     Extra\Extended\Console\TaskNameController,
@@ -229,6 +230,10 @@ Route::toGroup()
 
     Route::toGroup()
         ->prefix('/extend');
+
+        Route::get('/async/interface')
+            ->page('docsv20', AsyncInterfaceController::class)
+            ->name('docs.2.0.async.async.interface.page');
 
         Route::get('/console/name')
             ->page('docsv20', TaskNameController::class)
