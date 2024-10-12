@@ -1,6 +1,6 @@
 <?php
 
-class Example implements \Hleb\Base\RollbackInterface
+class Example
 {
     private static ?User $currentUser = null;
 
