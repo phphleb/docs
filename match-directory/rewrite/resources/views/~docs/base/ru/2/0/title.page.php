@@ -213,6 +213,13 @@ use Phphleb\Docs\Src\Paragraph;
     (Model-View-Controller).
 </p>
 
+<?= Paragraph::h2('Асинхронность') ?>
+
+<p>
+    <b><a href="<?= Link::url('docs.2.0.async.async.interface.page'); ?>">Сброс состояния</a></b>
+    для асинхронных запросов.
+</p>
+
 <?= Paragraph::h2('Контейнер и сервисы') ?>
 
 <p>
@@ -222,6 +229,10 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     <b><a href="<?= Link::url('docs.2.0.container.extended.replace.page'); ?>">Переопределение стандартного сервиса</a></b>
     или его удаление.
+</p>
+<p>
+    <b><a href="<?= Link::url('docs.2.0.container.extended.prof.page'); ?>">Нестандартное
+    использование</a></b> контейнера. Более сложные примеры.
 </p>
 
 <?= Paragraph::h2('Веб-консоль') ?>
@@ -251,6 +262,13 @@ use Phphleb\Docs\Src\Paragraph;
 <p>
     <b><a href="<?= Link::url('docs.2.0.api.page'); ?>">Набор трейтов для создания API</a></b>.
     Пагинация и валидатор.
+</p>
+
+<?= Paragraph::h2('Функции') ?>
+
+<p>
+    <b><a href="<?= Link::url('docs.2.0.functions.page'); ?>">Встроенные функции</a></b>
+    фреймворка.
 </p>
 
 <?= Paragraph::h2('Информация о проекте') ?>

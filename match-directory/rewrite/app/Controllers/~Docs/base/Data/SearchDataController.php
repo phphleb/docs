@@ -25,11 +25,13 @@ class SearchDataController extends Controller
         [$lang, $version, $subversion] = (array)$data['uri'];
 
         $text = (string)($data['text']);
-        if (mb_strlen($text) < Config::MIN_SEARCH_PHRASE_LENGTH) {
+        $maxLen = $lang === 'zh' ? 1 : Config::MIN_SEARCH_PHRASE_LENGTH;
+        if (mb_strlen($text) < $maxLen) {
             return [
                 'result' => 'error',
                 'message' => match ($lang) {
                     'ru' => 'Недостаточная длина поисковой фразы.',
+                    'zh' => '搜索短语长度不足。',
                     default => 'Insufficient search phrase length.',
                 },
             ];
@@ -40,6 +42,7 @@ class SearchDataController extends Controller
                 'result' => 'error',
                 'message' => match ($lang) {
                     'ru' => 'Превышена длина поисковой фразы.',
+                    'zh' => '已超出搜索短语的长度。',
                     default => 'The length of the search phrase has been exceeded.',
                 },
             ];
@@ -67,6 +70,7 @@ class SearchDataController extends Controller
                 'result' => 'error',
                 'message' => match ($lang) {
                     'ru' => 'Совпадений не найдено.',
+                    'zh' => '未找到匹配项。',
                     default => 'No matches found.',
                 },
             ];

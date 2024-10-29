@@ -30,6 +30,7 @@ use App\Controllers\Docs\{AboutController,
     Extra\Libraries\ApiController,
     Extra\Libraries\HloginController,
     Extra\TestingController,
+    FunctionController,
     InstallationController,
     IntroductionController,
     ModelController,
@@ -65,7 +66,7 @@ Route::get('/', view('/docs/index.page.php'))->name('docs.index.page');
 
 Route::toGroup()
     ->prefix('/{lang}/2/0/')
-    ->where(['lang' => 'ru']);
+    ->where(['lang' => 'ru|en|zh']);
 
     Route::get('/title')
         ->page('docsv20', TitleController::class)
@@ -162,6 +163,10 @@ Route::toGroup()
     Route::get('/events')
         ->page('docsv20', EventController::class)
         ->name('docs.2.0.events.page');
+
+    Route::get('/functions')
+        ->page('docsv20', FunctionController::class)
+        ->name('docs.2.0.functions.page');
 
     Route::get('/container/container')
         ->page('docsv20', ContainerController::class)

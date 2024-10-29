@@ -26,8 +26,17 @@ use Phphleb\Docs\Config;use Phphleb\Docs\Src\Link;
 <div align="center">
     <h2 id="hl-main-title"><span class="notranslate">HLEB2</span></h2>
     <div id="hl-main-description">PHP Framework</div>
-    <img src="/hlresource/framework/v<?= System::getApiVersion() ?>/svg/logo" width="200" height="200" alt="HL">
-    <div class="hl-link"><a href="<?= Link::url('docs.2.0.introduction.page', 'ru', true) ?>">Инструкция на русском</a></div>
+
+    <img src="/hlresource/framework/v<?= System::getApiVersion() ?>/svg/logo" width="200" height="200" alt="HL"><br>
+
+    <div class="hl-index-links">
+    <a href="<?= Link::url('docs.2.0.introduction.page', 'en', true) ?>"><div class="hl-link">In English</div></a>
+    <div class="hl-index-separator">|</div>
+    <a href="<?= Link::url('docs.2.0.introduction.page', 'zh', true) ?>"><div class="hl-link">简体中文</div></a>
+    <div class="hl-index-separator">|</div>
+    <a href="<?= Link::url('docs.2.0.introduction.page', 'ru', true) ?>"><div class="hl-link">На русском</div></a>
+    </div>
+
 </div>
     <div id="hl-header-line">
         <a href="https://github.com/phphleb/hleb/" rel="nofollow">
