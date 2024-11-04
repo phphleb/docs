@@ -22,6 +22,11 @@ use Phphleb\Docs\Src\Paragraph;
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php -S localhost:8000 -t public</p>
 
+<p class="hl-info-block">
+    端口8000可能已被<strong><span class="notranslate">localhost</span></strong>使用，如果是这种情况，可以将其替换为另一个空闲端口，例如8001或8002。
+</p>
+
+
 <p>
     由于 <span class="notranslate">public</span> 文件夹（如果您之前没有更改名称）是项目的公共目录，因此在执行此命令后，框架的欢迎页面将可以通过 <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> 访问。
 </p>

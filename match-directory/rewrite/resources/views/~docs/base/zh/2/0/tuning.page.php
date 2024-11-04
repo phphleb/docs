@@ -26,8 +26,8 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Paragraph::h2('Linux 中的访问权限配置') ?>
 
-    <p class="hl-danger-block">
-        警告！类似于 <b><span class="notranslate">sudo chmod -R 777 ./storage</span></b> 的命令，替换以下权限设置，仅可应用于非公共的本地开发设备上。
+    <p class="hl-info-block">
+        默认情况下，在DEBUG模式下，不需要此权限设置，并且主机通常提供高级权限，因此，如果项目处于开发模式或托管上，则可以跳过此步骤。
     </p>
 
     <p>

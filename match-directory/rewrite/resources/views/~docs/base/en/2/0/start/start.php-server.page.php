@@ -22,6 +22,10 @@ use Phphleb\Docs\Src\Paragraph;
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php -S localhost:8000 -t public</p>
 
+<p class="hl-info-block">
+    Port 8000 may already be in use for <span class="notranslate">localhost</span>, in which case replace it with another free port, such as 8001 or 8002.
+</p>
+
 <p>
     Since the <span class="notranslate">public</span> folder (unless you changed its name earlier) is the public directory of the project, after executing this command, the welcome page of the framework will be accessible at <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>.
 </p>

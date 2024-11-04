@@ -26,8 +26,8 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Paragraph::h2('Access Rights Configuration in Linux') ?>
 
-    <p class="hl-danger-block">
-        Warning! A command like <b><span class="notranslate">sudo chmod -R 777 ./storage</span></b>, replacing the following permissions setup, can be applied only on a local development machine that is not public.
+    <p class="hl-info-block">
+        By default, in DEBUG mode, this permission setting is not necessary, and hosting usually provides advanced permissions, so if the project is in development mode or on a hosting, this step can be skipped.
     </p>
 
     <p>

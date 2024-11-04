@@ -23,6 +23,10 @@ use Phphleb\Docs\Src\Paragraph;
 
 <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php -S localhost:8000 -t public</p>
 
+<p class="hl-info-block">
+    Порт 8000 может уже использоваться для <span class="notranslate">localhost</span>, в таком случае замените его на другой свободный, например 8001 или 8002.
+</p>
+
 <p>
     Так как папка <span class="notranslate">public</span> (если вы не изменили название ранее) является публичной директорией проекта, то после выполнения этой команды приветственная страница фреймворка будет доступна по адресу <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
 </p>
