@@ -126,6 +126,14 @@ use Phphleb\Docs\Src\Paragraph;
     For predefined addresses '404', '403', and '401', the corresponding standard error page will be displayed in the <span class="notranslate">view()</span> function.
 </p>
 
+<?= Paragraph::h2('preview() Function') ?>
+
+<p>
+    Sometimes, to specify a certain predefined text response in the route, it is necessary to set the appropriate <span class="notranslate">Content-Type</span> header and output certain request parameters. Currently, only the injection of the original route address, dynamic parameters from the address, and the <span class="notranslate">HTTP</span> request method is available. For example:
+</p>
+
+<?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>
+
 <?= Paragraph::h2('Route Grouping') ?>
 
 <p>

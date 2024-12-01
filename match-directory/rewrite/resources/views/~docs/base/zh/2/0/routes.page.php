@@ -126,6 +126,14 @@ use Phphleb\Docs\Src\Paragraph;
     对于预定义地址 '404'，'403' 和 '401'，<span class="notranslate">view()</span> 函数中将显示相应的标准错误页面。
 </p>
 
+<?= Paragraph::h2('预览功能 preview()') ?>
+
+<p>
+    有时候，为了在路由中指定某些预先定义的文本响应，需要设置适当的 <span class="notranslate">Content-Type</span> 标头并输出一些请求参数。目前，仅支持注入原始路由地址、地址中的动态参数以及 <span class="notranslate">HTTP</span> 请求方法。例如：
+</p>
+
+<?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>
+
 <?= Paragraph::h2('路由分组') ?>
 
 <p>

@@ -7,6 +7,8 @@ use Phphleb\Docs\Src\Paragraph;
 ?>
 <?= Paragraph::h1('Non-Standard Use of the Container') ?>
 
+<?= Paragraph::h2('Initializing a service in a service') ?>
+
 <p>
     Although creating an object in the container using <span class="notranslate">new</span> with an empty constructor is a good practice, eventually, you can outsource the creation of all necessary dependencies to a separate method in a special class and register its execution in the container. However, there are ways to resolve dependencies without resorting to creating a separate wrapper class.
 </p>
@@ -34,6 +36,18 @@ use Phphleb\Docs\Src\Paragraph;
 
 <p>
     In this way, in the framework's container, despite its seeming simplicity, you can add various interdependent services.
+</p>
+
+<?= Paragraph::h2('Adding Services in User Code') ?>
+
+<p>
+    By default, the framework does not allow adding services after the container has been initialized. However, by overriding the <span class="notranslate">getSingleton()</span> method to be public in the <span class="notranslate">ContainerFactory</span> class, you gain the ability to add objects to the container in your user code through this static method. Here’s an example of modifying the class:
+</p>
+
+<?= Code::fromFile('@views/docs/code/extra/extended/container/prof/set.singleton.container.class.php', false);  ?>
+
+<p>
+    From the example, it is clear that support for lazy initialization through the <span class="notranslate">callable</span> type and its handler has also been added.
 </p>
 
 <?php insertTemplate('/docs/en/authors'); ?>
