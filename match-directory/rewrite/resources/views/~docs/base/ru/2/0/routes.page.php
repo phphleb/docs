@@ -136,6 +136,16 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>
 
+<?= Paragraph::h2('Функция redirect()') ?>
+
+<p>
+    Для перенаправления на другой адрес в маршрутах используется метод <span class="notranslate">redirect()</span>. В нем могут быть ссылки на внутренние или внешние <span class="notranslate">URL</span>, а также он может включать динамические параметры запроса из оригинального маршрута:
+</p>
+
+<?= Code::fromFile('@views/docs/code/template/redirect.param.php', false);  ?>
+
+
+
 <?= Paragraph::h2('Группировка маршрутов') ?>
 
 <p>

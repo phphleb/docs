@@ -134,6 +134,14 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>
 
+<?= Paragraph::h2('函数 redirect()') ?>
+
+<p>
+    在路由中使用 <span class="notranslate">redirect()</span> 方法来指定地址重定向。它可以包含指向内部或外部 <span class="notranslate">URL</span> 的链接，还可以包括从原始路由获取的动态查询参数：
+</p>
+
+<?= Code::fromFile('@views/docs/code/template/redirect.param.php', false);  ?>
+
 <?= Paragraph::h2('路由分组') ?>
 
 <p>
