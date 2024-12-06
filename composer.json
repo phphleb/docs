@@ -26,8 +26,7 @@
         "ext-mbstring": "*",
         "phphleb/framework": ">=2.0",
         "phphleb/updater": "*",
-        "phphleb/adminpan": "dev-master",
+        "phphleb/adminpan": "*",
         "phphleb/spreader": "*"
-    },
-    "minimum-stability": "dev"
+    }
 }
