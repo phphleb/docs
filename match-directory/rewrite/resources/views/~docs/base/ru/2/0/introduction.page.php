@@ -49,6 +49,12 @@ use Phphleb\Docs\Src\Paragraph;
     Код фреймворка тщательно протестирован с помощью модульных тестов.
 </p>
 
+<?= Paragraph::h2('Производительность') ?>
+
+<p>
+Согласно сторонним <a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="_blank">метрикам производительности</a>, данный фреймворк имеет преимущества как по скорости, так и по стабильности работы.
+</p>
+
 <?= Paragraph::h2('Проекты на основе фреймворка') ?>
 
 <p>

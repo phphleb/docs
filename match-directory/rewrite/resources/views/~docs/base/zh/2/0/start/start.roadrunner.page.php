@@ -76,7 +76,7 @@ metrics:
 
 <?= Link::previousPage('docs.2.0.start.apache.page', '通过 Apache 启动'); ?>
 
-<?= Link::nextPage('docs.2.0.start.swoole.page', 'Swoole 服务器'); ?><br><br>
+<?= Link::nextPage('docs.2.0.start.workerman.page', 'Workerman 服务器'); ?><br><br>
 
 
 <?php insertTemplate('/docs/zh/authors'); ?>

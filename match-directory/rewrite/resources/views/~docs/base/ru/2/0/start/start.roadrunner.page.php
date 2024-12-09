@@ -76,7 +76,7 @@ metrics:
 
 <?= Link::previousPage('docs.2.0.start.apache.page', 'Запуск с помощью Apache'); ?>
 
-<?= Link::nextPage('docs.2.0.start.swoole.page', 'Сервер Swoole'); ?><br><br>
+<?= Link::nextPage('docs.2.0.start.workerman.page', 'Сервер Workerman'); ?><br><br>
 
 <?php insertTemplate('/docs/ru/authors'); ?>
 

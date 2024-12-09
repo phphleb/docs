@@ -55,6 +55,7 @@ use App\Controllers\Docs\{AboutController,
     Start\PhpServerController,
     Start\RoadrunnerServerController,
     Start\SwooleServerController,
+    Start\WorkermanServerController,
     Templates\CachedTemplateController,
     Templates\StandardTemplateController,
     Templates\TwigTemplateController,
@@ -115,6 +116,10 @@ Route::toGroup()
     Route::get('/start/roadrunner')
         ->page('docsv20', RoadrunnerServerController::class)
         ->name('docs.2.0.start.roadrunner.page');
+
+Route::get('/start/workerman')
+    ->page('docsv20', WorkermanServerController::class)
+    ->name('docs.2.0.start.workerman.page');
 
     Route::get('/start/hosting')
         ->page('docsv20', HostingServerController::class)

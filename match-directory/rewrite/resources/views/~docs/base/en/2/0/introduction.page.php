@@ -48,6 +48,12 @@ use Phphleb\Docs\Src\Paragraph;
     The framework's code is thoroughly tested with unit tests.
 </p>
 
+<?= Paragraph::h2('Performance') ?>
+
+<p>
+    According to third-party <a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="blank">performance metrics</a>, this framework offers advantages in both speed and operational stability.
+</p>
+
 <?= Paragraph::h2('Projects Based on the Framework') ?>
 
 <p>

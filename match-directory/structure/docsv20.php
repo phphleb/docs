@@ -124,6 +124,14 @@ return [
                             ],
                         ],
                         [
+                            'route' => 'docs.2.0.start.workerman.page',
+                            'name' => [
+                                'ru' => 'Workerman',
+                                'en' => 'Workerman',
+                                'zh' => 'Workerman',
+                            ],
+                        ],
+                        [
                             'route' => 'docs.2.0.start.swoole.page',
                             'name' => [
                                 'ru' => 'Swoole',

@@ -37,7 +37,7 @@ use Phphleb\Docs\Src\Paragraph;
     Согласно настройкам, приложение будет доступно по адресу:<br> <a href="http://localhost:9504" target="_blank">http://localhost:9504</a>
 </p>
 
-<?= Link::previousPage('docs.2.0.start.roadrunner.page', 'Сервер RoadRunner'); ?>
+<?= Link::previousPage('docs.2.0.start.workerman.page', 'Сервер Workerman'); ?>
 
 <?= Link::nextPage('docs.2.0.start.hosting.page', 'Изпользование хостинга'); ?><br><br>
 

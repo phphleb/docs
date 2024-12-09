@@ -49,6 +49,12 @@ use Phphleb\Docs\Src\Paragraph;
     框架的代码经过单元测试仔细测试。
 </p>
 
+<?= Paragraph::h2('性能表现') ?>
+
+<p>
+    根据第三方<a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="blank">性能指标</a>，该框架在速度和运行稳定性方面都具有优势。
+</p>
+
 <?= Paragraph::h2('基于框架的项目') ?>
 
 <p>
