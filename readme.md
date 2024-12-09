@@ -52,4 +52,7 @@ $ php console --clear-cache
 $ php console --clear-routes-cache
 ```
 
+```bash
+$ composer dumpautoload
+```
 
