@@ -10,7 +10,7 @@ if (typeof hlDocs.actions === 'undefined') hlDocs.actions = {
         }, 20);
     },
     stateOnload: function () {
-      var top = document.querySelector('.hl-top');
+        var top = document.querySelector('.hl-top');
         var pan = document.getElementById('hl-pan-content');
         if (top && pan) {
             top.addEventListener('click', function () {
@@ -30,9 +30,9 @@ if (typeof hlDocs.actions === 'undefined') hlDocs.actions = {
             if (pan.scrollTop > window.innerHeight + 200) {
                 top.style.display = 'block';
             } else {
-              top.style.display = 'none';
-          }
-      }, 1000);
+                top.style.display = 'none';
+            }
+        }, 1000);
         var code = document.querySelectorAll('.hl-code');
         code.forEach(function (el) {
             var cp = document.createElement("div");
@@ -52,7 +52,7 @@ if (typeof hlDocs.actions === 'undefined') hlDocs.actions = {
                             cd.forEach(function(el) {
                                 el.classList.remove('hl-copy-selected');
                             });
-                            navigator.clipboard.writeText(ct.innerText);
+                            navigator.clipboard.writeText(ct.innerText.replace(/\u00A0/g, ' '));
                             pr.classList.add('hl-copy-selected');
                         }
                     }
