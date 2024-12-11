@@ -59,6 +59,14 @@ use Phphleb\Docs\Src\Paragraph;
     Such pages are used in the framework's registration library for the admin panel and also on this documentation site.
 </p>
 
+<?= Paragraph::h2('KernelEvent') ?>
+
+<p>
+    The <span class="notranslate">KernelEvent</span> event is not necessarily present in the folder with other Events, but if a class file with this name is created, it will be utilized by the framework. Its unique feature is intercepting all web requests at the highest level and creating a global action for them. For example, this could be logging user requests (not initially included in the framework):
+</p>
+
+<?= Code::fromFile('@views/docs/code/event/class.event.kernel.php');  ?>
+
 <?= Paragraph::h2('TaskEvent') ?>
 
 <p>

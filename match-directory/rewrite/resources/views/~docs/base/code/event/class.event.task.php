@@ -1,4 +1,7 @@
 <?php
+// File /app/Bootstrap/Events/TaskEvent.php
+
+declare(strict_types=1);
 
 namespace App\Bootstrap\Events;
 

@@ -59,6 +59,14 @@ use Phphleb\Docs\Src\Paragraph;
     此类页面用于框架的注册库中的管理面板以及此文档网站上。
 </p>
 
+<?= Paragraph::h2('KernelEvent') ?>
+
+<p>
+    <span class="notranslate">KernelEvent</span> 事件不一定需要存在于与其他事件相同的文件夹中，但如果创建了具有此类名的文件，框架将会使用它。其独特功能是能够在最高级别拦截所有 Web 请求并为其创建全局操作。例如，这可以用于记录用户请求日志（框架中最初并未包含此功能）。
+</p>
+
+<?= Code::fromFile('@views/docs/code/event/class.event.kernel.php');  ?>
+
 <?= Paragraph::h2('TaskEvent') ?>
 
 <p>

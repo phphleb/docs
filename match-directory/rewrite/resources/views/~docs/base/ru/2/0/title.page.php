@@ -55,6 +55,10 @@ use Phphleb\Docs\Src\Paragraph;
     Асинхронный веб-сервер на Go.
 </p>
 <p>
+    <b><a href="<?= Link::url('docs.2.0.start.workerman.page'); ?>">Workerman</a></b>.
+    Асинхронный веб-сервер на PHP.
+</p>
+<p>
     <b><a href="<?= Link::url('docs.2.0.start.swoole.page'); ?>">Swoole</a></b>.
     Асинхронный сервер в виде расширения для PHP.
 </p>

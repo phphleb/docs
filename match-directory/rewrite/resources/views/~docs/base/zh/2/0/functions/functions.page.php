@@ -264,6 +264,21 @@ use Phphleb\Docs\Src\Paragraph;
     <span class="notranslate">insertCacheTemplate()</span> 函数类似于 <span class="notranslate">insertTemplate()</span>，区别在于模板会缓存指定在 <b><span class="notranslate">sec</span></b> 参数中的秒数。其他参数与 <span class="notranslate">insertTemplate()</span> 函数相同。
 </p>
 
+<?= Paragraph::h2('获取环境变量') ?>
+
+<p>
+    <span class="notranslate">HLEB2</span> 框架提供了多种功能，可以以方便的格式（类型）获取环境变量。
+</p>
+
+
+<?= Paragraph::h3('函数 get_env(), env(), env_bool(), env_array(), 和 env_int()') ?>
+
+<p>
+    <span class="notranslate">get_env()</span> 函数用于获取环境变量的值并确定其类型。尽管这是一个通用函数，但建议使用以下特定函数之一来进行类型转换。<span class="notranslate">env()</span> 函数返回字符串，<span class="notranslate">env_bool()</span> 将值转换为布尔值，<span class="notranslate">env_array()</span> 将值解析为数组，而 <span class="notranslate">env_int()</span> 将值转换为整数。此外，每个函数都支持第二个参数，用于指定默认值：
+</p>
+
+<?= Code::fromFile('@views/docs/code/function/function.env.example.php', false); ?>
+
 <?= Paragraph::h2('附加功能') ?>
 
 <p>

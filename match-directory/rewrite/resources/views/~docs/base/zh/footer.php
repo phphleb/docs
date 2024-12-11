@@ -12,6 +12,9 @@ use Phphleb\Docs\Config;
         可在 <a href="https://www.youtube.com/@php-framework-hleb2" target="_blank">YouTube</a> 和 <a href="https://rutube.ru/channel/38328169/" target="_blank">Rutube</a> 上找到教程视频材料。
     </p>
     <p>
+        用于与 PhpStorm IDE 集成的框架 <a href="https://plugins.jetbrains.com/plugin/25645-hleb2" target="_blank">专用插件</a>。
+    </p>
+    <p>
         本网站是针对<span class="notranslate">HLEB2</span>框架的说明，使用<span class="hl-nowrap">HLEB2 <span class="notranslate">框架</span>创建。</span>
     </p>
     <p>

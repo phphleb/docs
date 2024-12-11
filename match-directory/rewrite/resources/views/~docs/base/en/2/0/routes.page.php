@@ -129,7 +129,7 @@ use Phphleb\Docs\Src\Paragraph;
 <?= Paragraph::h2('Function preview()') ?>
 
 <p>
-    Sometimes, to specify a certain predefined text response in the route, it is necessary to set the appropriate <span class="notranslate">Content-Type</span> header and output certain request parameters. Currently, only the injection of the original route address, dynamic parameters from the address, and the <span class="notranslate">HTTP</span> request method is available. For example:
+    Sometimes, to specify a predefined textual response in a route, it is necessary to set the appropriate <span class="notranslate">Content-Type</span> header and output certain request parameters. Currently, in the <span class="notranslate">preview()</span> function, it only supports injecting the original route address, dynamic parameters from the address, the current IP address, and the <span class="notranslate">HTTP</span> request method. For example:
 </p>
 
 <?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>

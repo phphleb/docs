@@ -129,7 +129,7 @@ use Phphleb\Docs\Src\Paragraph;
 <?= Paragraph::h2('预览功能 preview()') ?>
 
 <p>
-    有时候，为了在路由中指定某些预先定义的文本响应，需要设置适当的 <span class="notranslate">Content-Type</span> 标头并输出一些请求参数。目前，仅支持注入原始路由地址、地址中的动态参数以及 <span class="notranslate">HTTP</span> 请求方法。例如：
+    有时为了在路由中指定预定义的文本响应，需要设置相应的 <span class="notranslate">Content-Type</span> 标头并输出某些请求参数。当前 <span class="notranslate">preview()</span> 函数仅支持注入原始路由地址、地址中的动态参数、当前 IP 地址以及 <span class="notranslate">HTTP</span> 请求方法。例如：
 </p>
 
 <?= Code::fromFile('@views/docs/code/template/preview.param.php', false);  ?>

@@ -264,6 +264,22 @@ use Phphleb\Docs\Src\Paragraph;
     The <span class="notranslate">insertCacheTemplate()</span> function is similar to <span class="notranslate">insertTemplate()</span> except that the template is cached for the specified number of seconds in the <b><span class="notranslate">sec</span></b> parameter. Other arguments are identical to those in the <span class="notranslate">insertTemplate()</span> function.
 </p>
 
+<?= Paragraph::h2('Environment Variable Retrieval') ?>
+
+<p>
+    The <span class="notranslate">HLEB2</span> framework includes several functions for retrieving environment variables in a convenient format (type).
+</p>
+
+
+<?= Paragraph::h3('Functions get_env(), env(), env_bool(), env_array(), and env_int()') ?>
+
+<p>
+    The <span class="notranslate">get_env()</span> function retrieves the value of an environment variable and determines its type. Although it is a universal function, it's recommended to use specific functions from the list below for type casting. The <span class="notranslate">env()</span> function returns a string, <span class="notranslate">env_bool()</span> converts the value into a boolean, <span class="notranslate">env_array()</span> parses it into an array, and <span class="notranslate">env_int()</span> converts it into an integer. Additionally, each function allows for a second parameter to specify a default value:
+</p>
+
+<?= Code::fromFile('@views/docs/code/function/function.env.example.php', false); ?>
+
+
 <?= Paragraph::h2('Additional') ?>
 
 <p>

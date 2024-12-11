@@ -277,6 +277,21 @@ use Phphleb\Docs\Src\Paragraph;
 </p>
 
 
+<?= Paragraph::h2('Получение переменных окружения') ?>
+
+<p>
+    Фреймворк <span class="notranslate">HLEB2</span> включает несколько функций получения переменных окружения в удобном формате (типе).
+</p>
+
+<?= Paragraph::h3('Функции get_env(), env(), env_bool(), env_array() и env_int()') ?>
+
+<p>
+    Функция <span class="notranslate">get_env()</span> позволяет получить значение переменной окружения и определить её тип. Это универсальная функция, но для приведения к конкретному типу лучше использовать конкретную функцию из перечисленных далее. Функция <span class="notranslate">env()</span> возвращает строку, <span class="notranslate">env_bool()</span> - преобразует в булево значение, <span class="notranslate">env_array()</span> - производит парсинг в массив, а <span class="notranslate">env_int()</span> - конвертирует в целое число. Также каждая функция имеет второй параметр для указания дефолтного значения:
+</p>
+
+<?= Code::fromFile('@views/docs/code/function/function.env.example.php', false);  ?>
+
+
 <?= Paragraph::h2('Дополнительно') ?>
 
 <p>
