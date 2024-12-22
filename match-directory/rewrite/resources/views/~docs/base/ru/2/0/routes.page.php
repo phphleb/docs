@@ -327,6 +327,16 @@ use Phphleb\Docs\Src\Paragraph;
     Возможность подстановки может быть особенно полезной при распределении <span class="notranslate">HTTP</span>-методов запроса по методам контроллера.
 </p>
 
+
+<?= Paragraph::h2('Отключение отладочного режима в маршруте') ?>
+
+<p>
+    В некоторых маршрутах в режиме отладки вывод <span class="notranslate">DEBUG</span>-панели может быть не предусмотрен, например, если это <span class="notranslate">GET</span>-запрос к <span class="notranslate">API</span> и ожидается ответ в формате <span class="notranslate">JSON</span>. Есть временный способ отключения отладочного режима в виде <span class="notranslate">GET</span>-параметра <span class="notranslate">_debug=off</span> для запроса, но также и постоянный, когда маршруту можно указать метод <span class="notranslate">noDebug()</span>. Этот метод может быть добавлен и для группы маршрутов, в данном примере для всех запросов к <span class="notranslate">API</span>.
+</p>
+<p>
+    Если вывод панели отладки запрещен с помощью <span class="notranslate">noDebug()</span> метода, но нужно всё равно временно включить отладочный режим, достаточно указать <span class="notranslate">_debug=on</span> в <span class="notranslate">GET</span>-параметрах запроса. Стоит помнить, что указанное здесь включение/отключение режима отладки актуально только если <span class="notranslate">DEBUG</span>-режим активен в настройках конфигурации, в противном случае он отключен полностью.
+</p>
+
 <?= Paragraph::h2('Обновление кеша маршрутов') ?>
 
 <p>

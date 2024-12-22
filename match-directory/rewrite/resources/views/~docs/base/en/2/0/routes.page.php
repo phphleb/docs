@@ -326,6 +326,16 @@ use Phphleb\Docs\Src\Paragraph;
     The ability to perform substitutions can be particularly useful when distributing request <span class="notranslate">HTTP</span> methods across controller methods.
 </p>
 
+<?= Paragraph::h2('Disabling Debug Mode in a Route') ?>
+
+<p>
+    In some routes, the output of the <span class="notranslate">DEBUG</span> panel may not be provided in debug mode. For instance, this applies to <span class="notranslate">GET</span> requests to an <span class="notranslate">API</span> where a response is expected in <span class="notranslate">JSON</span> format. There is a temporary way to disable debug mode by using a <span class="notranslate">GET</span> parameter <span class="notranslate">_debug=off</span> in the request, but there is also a permanent way by specifying the <span class="notranslate">noDebug()</span> method for a route. This method can also be applied to a group of routes. In this example, it is applied to all <span class="notranslate">API</span> requests.
+</p>
+<p>
+    If the <span class="notranslate">DEBUG</span> panel output is disabled using the <span class="notranslate">noDebug()</span> method, but you still temporarily need to enable debug mode, it is enough to specify <span class="notranslate">_debug=on</span> in the <span class="notranslate">GET</span> parameters of the request. It is important to keep in mind that the enabling/disabling of debug mode discussed here is only relevant if the <span class="notranslate">DEBUG</span> mode is active in the configuration settings; otherwise, it remains completely disabled.
+</p>
+
+
 <?= Paragraph::h2('Updating Route Cache') ?>
 
 <p>

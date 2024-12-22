@@ -325,6 +325,15 @@ use Phphleb\Docs\Src\Paragraph;
     替换的功能在根据控制器方法分配请求 <span class="notranslate">HTTP</span> 方法时特别有用。
 </p>
 
+<?= Paragraph::h2('在路由中禁用调试模式') ?>
+
+<p>
+    在某些路由中，调试模式下可能不会显示<span class="notranslate">DEBUG</span>面板的输出。例如，对于对<span class="notranslate">API</span>的<span class="notranslate">GET</span>请求，并期待以<span class="notranslate">JSON</span>格式接收响应。这种情况下，可以通过临时方式来禁用调试模式，即在请求中使用<span class="notranslate">_debug=off</span>作为<span class="notranslate">GET</span>参数。然而，也可以通过为路由指定<span class="notranslate">noDebug()</span>方法实现永久禁用。该方法还可以应用到一组路由，例如在此例子中应用于所有对<span class="notranslate">API</span>的请求。
+</p>
+<p>
+    如果使用<span class="notranslate">noDebug()</span>方法禁用了<span class="notranslate">DEBUG</span>面板的输出，但仍然需要临时启用调试模式，只需将<span class="notranslate">_debug=on</span>添加到请求的<span class="notranslate">GET</span>参数中。需要注意的是，这里提到的调试模式的启用/禁用仅在配置设置中<span class="notranslate">DEBUG</span>模式处于激活状态时有效；如果配置中未激活此模式，那么调试功能将完全禁用。
+</p>
+
 <?= Paragraph::h2('更新路由缓存') ?>
 
 <p>
