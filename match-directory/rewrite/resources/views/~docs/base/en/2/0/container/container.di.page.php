@@ -67,6 +67,30 @@ use Phphleb\Docs\Src\Paragraph;
     For example, <span class="notranslate">Hleb\Reference\RequestInterface</span> is equivalent to <span class="notranslate">Hleb\Reference\Interface\Request</span>.
 </p>
 
+<?= Paragraph::h2('Autowiring for Dependencies Not Found in the Container') ?>
+
+<p>
+    As mentioned earlier, if the framework cannot find a dependency in the container while resolving dependencies, it will attempt to create an object of the specified class on its own and resolve that class's dependencies if they are specified in the class constructor.
+</p>
+<p>
+    There are ways to indicate which path should be followed in such cases.
+    The configuration parameter <span class="notranslate">system.autowiring.mode</span> sets the management mode for such dependencies.
+    There is a mode in which you can completely disable autowiring for dependencies not found in the container and a mode similar to this, but allowing the use of a class object when the <span class="notranslate">AllowAutowire</span> attribute is present, as well as the <span class="notranslate">NoAutowire</span> attribute that disallows autowiring for the current class if the permitting mode with support for this attribute is enabled.
+</p>
+
+<?= Paragraph::h2('Dependency Management') ?>
+
+<p>
+    Using the special <span class="notranslate">DI</span> attribute, you can specify in a specific location (class method) which particular dependency with the specified interface should be used. If such a dependency from the attribute is found in the container, it will be used from the container. If not, the same rules for autowiring dependencies not found in the container apply as if it were specified directly in the method. Examples:
+</p>
+
+<?= Code::fromFile('@views/docs/code/di/class.autowiring.example.php'); ?>
+
+<p>
+    It shows options for how to specify a specific class from the required interface in the parameter, as well as creating the necessary class in the attribute.
+</p>
+
+
 <?= Link::previousPage('docs.2.0.container.get.page', 'Retrieving Service'); ?>
 
 <?= Link::nextPage('docs.2.0.service.request.page', 'Request'); ?><br><br>

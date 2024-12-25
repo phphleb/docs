@@ -68,6 +68,29 @@ use Phphleb\Docs\Src\Paragraph;
     例如，<span class="notranslate">Hleb\Reference\RequestInterface</span> 等同于 <span class="notranslate">Hleb\Reference\Interface\Request</span>。
 </p>
 
+<?= Paragraph::h2('自动连接未在容器中找到的依赖项') ?>
+
+<p>
+    正如前面提到的，如果在解析依赖项的过程中框架找不到容器中的依赖项，它将尝试自己创建该类的对象，并解析类构造函数中指定的依赖项。
+</p>
+<p>
+    有一些方法可以指示在这种情况下应遵循的路径。
+    配置参数 <span class="notranslate">system.autowiring.mode</span> 设置此类依赖项的管理模式。
+    有一种模式可以完全禁用对未在容器中找到的依赖项的自动连接，还有一种类似的模式，但允许在存在 <span class="notranslate">AllowAutowire</span> 属性时使用类对象，以及 <span class="notranslate">NoAutowire</span> 属性，如果启用了支持此属性的允许模式，则禁止当前类的自动连接。
+</p>
+
+<?= Paragraph::h2('依赖管理') ?>
+
+<p>
+    使用特殊的 <span class="notranslate">DI</span> 属性，您可以在特定位置（类方法）指定要使用的具有指定接口的特定依赖项。如果在容器中找到来自属性的依赖项，则将从容器中使用。如果没有，那么与直接在方法中指定的情况一样，适用对于未在容器中找到的依赖项的自动连接规则。示例：
+</p>
+
+<?= Code::fromFile('@views/docs/code/di/class.autowiring.example.php'); ?>
+
+<p>
+    这展示了如何在参数中指定所需接口的特定类以及在属性中创建所需类的选项。
+</p>
+
 <?= Link::previousPage('docs.2.0.container.get.page', '检索服务'); ?>
 
 <?= Link::nextPage('docs.2.0.service.request.page', '请求'); ?><br><br>
