@@ -55,7 +55,7 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Link::previousPage('docs.2.0.start.swoole.page', 'Сервер Swoole'); ?>
 
-<?= Link::nextPage('docs.2.0.routes.page', 'Маршрутизация'); ?><br><br>
+<?= Link::nextPage('docs.2.0.start.webrotor.page', 'WebRotor'); ?><br><br>
 
 <?php insertTemplate('/docs/ru/authors'); ?>
 
