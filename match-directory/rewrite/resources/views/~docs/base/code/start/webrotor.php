@@ -25,7 +25,7 @@ $server->init($psr7Creator);
 $framework = new Hleb\HlebAsyncBootstrap(__DIR__);
 
 $server->run(function(ServerRequestInterface $request, ResponseInterface $response) use ($framework) {
-    $res = $framework->load($request, $_SESSION, $_COOKIE)->getResponse();
+    $res = $framework->load($request)->getResponse();
 
     $response->getBody()->write($res->getBody());
     foreach($res->getHeaders() as $name => $header) {
