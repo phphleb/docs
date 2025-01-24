@@ -46,6 +46,15 @@ use Phphleb\Docs\Src\Paragraph;
     Подобным образом меняются значения остальных конфигурационных настроек.
 </p>
 
+<?= Paragraph::h2('Ограничение для Host') ?>
+
+<p>
+    Для предотвращения подмены заголовка Host укажите в настройке <span class="notranslate"><b>allowed.hosts</b></span> в файле <span class="notranslate">/config/common.php</span> поддерживаемые адреса хостов, например <span class="notranslate">"example.com"</span> и <span class="notranslate">"www.example.com"</span>, используемые в проекте. Также можно задать ограничение по регулярному выражению. В <span class="notranslate">DEBUG</span>-режиме проверка хостов на соответствие этому списку не будет производиться.
+</p>
+<p class="hl-info-block">
+    Хорошей практикой будет использование внутри проекта относительных ссылок без указания хоста (домена) сайта.
+</p>
+
 <?= Paragraph::h2('Кеширование') ?>
 
 <p>

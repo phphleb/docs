@@ -45,6 +45,15 @@ use Phphleb\Docs\Src\Paragraph;
     Similarly, other configuration settings can be modified.
 </p>
 
+<?= Paragraph::h2('Host Restriction') ?>
+
+<p>
+    To prevent header Host spoofing, specify supported host addresses in the <span class="notranslate"><b>allowed.hosts</b></span> setting within the <span class="notranslate">/config/common.php</span> file, such as <span class="notranslate">"example.com"</span> and <span class="notranslate">"www.example.com"</span>, used in your project. You can also set restrictions using regular expressions. In <span class="notranslate">DEBUG</span> mode, the check for hosts matching this list will not be performed.
+</p>
+<p class="hl-info-block">
+    A good practice is to use relative links within the project without specifying the host (domain) of the site.
+</p>
+
 <?= Paragraph::h2('Caching') ?>
 
 <p>

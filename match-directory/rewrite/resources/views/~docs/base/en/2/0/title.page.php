@@ -66,6 +66,11 @@ use Phphleb\Docs\Src\Paragraph;
     <b><a href="<?= Link::url('docs.2.0.start.hosting.page'); ?>">Hosting</a></b>.
     Specifics of installing on hosting environments.
 </p>
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.webrotor.page'); ?>">WebRotor</a></b>.
+    Asynchrony for shared hosting.
+</p>
+
 
 <?= Paragraph::h2('Routing') ?>
 

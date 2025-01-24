@@ -45,6 +45,15 @@ use Phphleb\Docs\Src\Paragraph;
     其他配置设置可以用类似的方法修改。
 </p>
 
+<?= Paragraph::h2('主机限制') ?>
+
+<p>
+    为了防止头部 Host 欺骗，请在 <span class="notranslate"><b>allowed.hosts</b></span> 设置中指定支持的主机地址，例如在 <span class="notranslate">/config/common.php</span> 文件中使用的 <span class="notranslate">"example.com"</span> 和 <span class="notranslate">"www.example.com"</span>。您还可以使用正则表达式设置限制。在 <span class="notranslate">DEBUG</span> 模式下，将不会执行对此列表的主机匹配检查。
+</p>
+<p class="hl-info-block">
+    良好的实践是在项目中使用不指定网站主机（域名）的相对链接。
+</p>
+
 <?= Paragraph::h2('缓存') ?>
 
 <p>

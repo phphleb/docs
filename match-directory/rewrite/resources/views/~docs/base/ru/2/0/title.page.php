@@ -67,6 +67,11 @@ use Phphleb\Docs\Src\Paragraph;
     Особенности установки на хостинге.
 </p>
 
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.webrotor.page'); ?>">WebRotor</a></b>.
+    Асинхронность для shared hosting.
+</p>
+
 <?= Paragraph::h2('Маршрутизация') ?>
 
 <p>

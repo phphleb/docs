@@ -67,6 +67,10 @@ use Phphleb\Docs\Src\Paragraph;
     <b><a href="<?= Link::url('docs.2.0.start.hosting.page'); ?>">托管</a></b>.
     在托管环境上的安装细节。
 </p>
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.webrotor.page'); ?>">WebRotor</a></b>.
+    共享託管的非同步。
+</p>
 
 <?= Paragraph::h2('路由') ?>
 
