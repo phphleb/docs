@@ -102,6 +102,21 @@ use Phphleb\Docs\Src\Paragraph;
     Для этого вложенного контроллера не будет применено ни одно Событие, из назначенных контроллерам.
 </p>
 
+<?= Paragraph::h2('Предопределённые классы HTTP-ошибок') ?>
+
+<p>
+    Если какое-то условие в коде контроллера должно завершиться <span class="notranslate">HTTP</span>-ошибкой, то для этого существует
+    несколько предопределённых классов исключений, таких как <span class="notranslate">'Http404NotFoundException'</span> и <span class="notranslate">'Http403ForbiddenException'</span>.<br>
+    Например, при указании ошибки как <span class="notranslate">'throw new Hleb\Http404NotFoundException();'</span>, фреймворк сгенерирует <span class="notranslate">HTTP</span>-код и текст стандартной ошибки 404 в ответе.
+</p>
+
+<?= Paragraph::h2('Валидация входящих данных') ?>
+
+<p>
+    Во фреймворке <span class="notranslate">HLEB2</span> базовую проверку динамических частей адреса маршрута можно объявить в самом маршруте через метод <span class="notranslate">where()</span>. Если необходимо проверить сопутствующие данные, например данные <span class="notranslate">POST</span>-запроса в формате <span class="notranslate">JSON</span>, то одним из вариантов будет использование библиотеки <a href="<?= Link::url('docs.2.0.api.page'); ?>">api-multitool</a>.<br>
+    При помощи трейта из этой библиотеки <span class="notranslate">Phphleb\ApiMultitool\ApiRequestDataManagerTrait</span> становится доступен метод <span class="notranslate">check()</span> которым и можно валидировать различные данные запроса.
+</p>
+
 <?= Paragraph::h2('Создание контроллера') ?>
 
 <p>

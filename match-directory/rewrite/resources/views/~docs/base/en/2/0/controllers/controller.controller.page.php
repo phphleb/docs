@@ -102,6 +102,21 @@ use Phphleb\Docs\Src\Paragraph;
     No Events assigned to controllers will be applied to this nested controller.
 </p>
 
+<?= Paragraph::h2('HTTP Error Classes') ?>
+
+<p>
+    If a certain condition in the controller code should end with an <span class="notranslate">HTTP</span> error, there are several predefined exception classes for this, such as <span class="notranslate">'Http404NotFoundException'</span> and <span class="notranslate">'Http403ForbiddenException'</span>.<br>
+    For example, by specifying the error as <span class="notranslate">'throw new Hleb\Http404NotFoundException();'</span>, the framework will generate the <span class="notranslate">HTTP</span> code and standard 404 error text in the response.
+</p>
+
+<?= Paragraph::h2('Incoming Data Validation') ?>
+
+<p>
+    In the <span class="notranslate">HLEB2</span> framework, basic validation of dynamic parts of the route address can be declared directly in the route using the <span class="notranslate">where()</span> method. If you need to validate payload data, such as <span class="notranslate">POST</span> request data in <span class="notranslate">JSON</span> format, one option is to use the <a href="<?= Link::url('docs.2.0.api.page'); ?>">api-multitool</a> library.<br>
+    By using the trait from this library <span class="notranslate">Phphleb\ApiMultitool\ApiRequestDataManagerTrait</span>, the <span class="notranslate">check()</span> method becomes available and can be used to validate various request data.
+</p>
+
+
 <?= Paragraph::h2('Creating a Controller') ?>
 
 <p>

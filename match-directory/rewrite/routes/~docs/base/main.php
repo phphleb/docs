@@ -55,6 +55,7 @@ use App\Controllers\Docs\{AboutController,
     Start\PhpServerController,
     Start\RoadrunnerServerController,
     Start\SwooleServerController,
+    Start\WebrotorServerController,
     Start\WorkermanServerController,
     Templates\CachedTemplateController,
     Templates\StandardTemplateController,
@@ -117,13 +118,17 @@ Route::toGroup()
         ->page('docsv20', RoadrunnerServerController::class)
         ->name('docs.2.0.start.roadrunner.page');
 
-Route::get('/start/workerman')
-    ->page('docsv20', WorkermanServerController::class)
-    ->name('docs.2.0.start.workerman.page');
+     Route::get('/start/workerman')
+        ->page('docsv20', WorkermanServerController::class)
+        ->name('docs.2.0.start.workerman.page');
 
     Route::get('/start/hosting')
         ->page('docsv20', HostingServerController::class)
         ->name('docs.2.0.start.hosting.page');
+
+    Route::get('/start/webrotor')
+        ->page('docsv20', WebrotorServerController::class)
+        ->name('docs.2.0.start.webrotor.page');
 
     Route::get('/start/swoole')
         ->page('docsv20', SwooleServerController::class)

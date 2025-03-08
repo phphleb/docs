@@ -35,6 +35,19 @@ class GlobalDocumentationController extends PageController
         $version = (int)array_shift($path);
         $subversion = (int)array_shift($path);
 
+        $this->metaRows = [
+            '<!--Icons-->',
+            '<link rel="apple-touch-icon" sizes="128x128" href="https://' . Request::getHost() . '/docs/touch-icon/apple-touch-icon.png">',
+            '<link rel="mask-icon" href="/docs/touch-icon/safari-pinned-tab.svg" color="#4c7ab5">',
+            '<meta name="msapplication-TileColor" content="#603cba">',
+            '<link rel="icon" type="image/png" sizes="32x32" href="/docs/touch-icon/favicon-32x32.png">',
+            '<link rel="icon" type="image/png" sizes="16x16" href="/docs/touch-icon/favicon-16x16.png">',
+            '<meta name="msapplication-config" content="/docs/touch-icon/browserconfig.xml">',
+            '<meta name="theme-color" content="#ea1f61">',
+            '<link rel="manifest" href="/docs/touch-icon/site.webmanifest">',
+            '<!-- -->'
+        ];
+
         return view('/docs/distributor', [
             'template' => $this->searchTemplateVersion($lang, $version, $subversion, $page),
             'params' => [],

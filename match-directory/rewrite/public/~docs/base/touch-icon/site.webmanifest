@@ -1,0 +1,28 @@
+﻿{
+    "name": "HLEB2FRAMEWORK.RU",
+    "short_name": "hleb2framework.ru",
+    "icons": [
+        {
+             "src": "/docs/touch-icon/icon-128x128.png",
+                           "type": "image/png",
+                           "sizes": "128x128"
+        }, {
+
+                 "src": "/docs/touch-icon/ms-touch-icon-144x144-precomposed.png",
+                                 "type": "image/png",
+                                 "sizes": "144x144"
+        }, {
+                "src": "/docs/touch-icon/android-chrome-512x512.png",
+                                 "sizes": "512x512",
+                                 "type": "image/png"
+         },{
+
+              "src": "/docs/touch-icon/android-chrome-192x192.png",
+                          "sizes": "192x192",
+                          "type": "image/png"
+            }
+    ],
+    "theme_color": "#ea1f61",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

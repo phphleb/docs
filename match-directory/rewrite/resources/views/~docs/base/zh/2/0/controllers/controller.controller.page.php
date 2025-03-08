@@ -101,6 +101,20 @@ use Phphleb\Docs\Src\Paragraph;
     没有为控制器分配的事件将应用于这个嵌套的控制器。
 </p>
 
+<?= Paragraph::h2('预定义的 HTTP 错误类') ?>
+
+<p>
+    如果控制器代码中的某个条件应以 <span class="notranslate">HTTP</span> 错误结束，则有几个预定义的异常类，例如 <span class="notranslate">'Http404NotFoundException'</span> 和 <span class="notranslate">'Http403ForbiddenException'</span>。<br>
+    例如，通过将错误指定为 <span class="notranslate">'throw new Hleb\Http404NotFoundException();'</span>，框架会在响应中生成 <span class="notranslate">HTTP</span> 代码和标准的 404 错误文本。
+</p>
+
+<?= Paragraph::h2('验证传入数据') ?>
+
+<p>
+    在 <span class="notranslate">HLEB2</span> 框架中，动态路由地址部分的基本验证可以通过在路由中使用 <span class="notranslate">where()</span> 方法直接声明。如果需要验证有效载荷数据，例如 <span class="notranslate">JSON</span> 格式的 <span class="notranslate">POST</span> 请求数据，可以选择使用 <a href="<?= Link::url('docs.2.0.api.page'); ?>">api-multitool</a> 库。<br>
+    使用这个库中的 trait <span class="notranslate">Phphleb\ApiMultitool\ApiRequestDataManagerTrait</span> 后，可以使用 <span class="notranslate">check()</span> 方法来验证各种请求数据。
+</p>
+
 <?= Paragraph::h2('创建控制器') ?>
 
 <p>
