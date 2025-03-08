@@ -143,8 +143,16 @@ return [
                             'route' => 'docs.2.0.start.hosting.page',
                             'name' => [
                                 'ru' => 'Хостинг',
-                                'en' => 'Website hosting',
+                                'en' => 'Shared hosting',
                                 'zh' => '网站托管',
+                            ],
+                        ],
+                        [
+                            'route' => 'docs.2.0.start.webrotor.page',
+                            'name' => [
+                                'ru' => 'WebRotor',
+                                'en' => 'WebRotor',
+                                'zh' => 'WebRotor',
                             ],
                         ],
                     ],
