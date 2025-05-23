@@ -59,6 +59,14 @@ if (typeof hlDocs.actions === 'undefined') hlDocs.actions = {
                 });
             }
         });
+        let select = document.querySelector('.hl-pan-menu-version-select');
+        if (select) {
+            select.addEventListener('change', function() {
+                if (this.value) {
+                    window.location.href = this.value;
+                }
+            });
+        }
     }
 }
 hlDocs.actions.register();

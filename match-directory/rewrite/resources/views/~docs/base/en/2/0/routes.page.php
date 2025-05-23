@@ -201,6 +201,14 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/routes/match.method.php', false);  ?>
 
+<?= Paragraph::h2('Route::alias() Method') ?>
+
+<p>
+    The <span class="notranslate">alias()</span> method allows you to create a new route from an existing one by referencing its name. This is done by assigning a new address and executing additional actions defined by the group that the new route belongs to.
+</p>
+
+<?= Code::fromFile('@views/docs/code/routes/alias.method.php', false);  ?>
+
 <?= Paragraph::h2('Route::fallback() Method') ?>
 
 <p>

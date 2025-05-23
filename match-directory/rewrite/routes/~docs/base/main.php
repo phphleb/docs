@@ -50,6 +50,7 @@ use App\Controllers\Docs\{AboutController,
     Service\SessionController,
     Service\SettingsController,
     Start\ApacheServerController,
+    Start\FrankenPhpController,
     Start\HostingServerController,
     Start\NginxServerController,
     Start\PhpServerController,
@@ -109,6 +110,9 @@ Route::toGroup()
     Route::get('/start/nginx')
         ->page('docsv20', NginxServerController::class)
         ->name('docs.2.0.start.nginx.page');
+    Route::get('/start/frankenphp')
+        ->page('docsv20', FrankenPhpController::class)
+        ->name('docs.2.0.start.frankenphp.page');
 
     Route::get('/start/apache')
         ->page('docsv20', ApacheServerController::class)

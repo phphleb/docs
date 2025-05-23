@@ -12,7 +12,7 @@ use Phphleb\Docs\Src\Paragraph;
     <b><span class="notranslate">HLEB2</span></b> 是 <span class="notranslate">HLEB</span> 框架的第二个版本，经过完全重构和改进。
 </p>
 <p>
-    它支持 <span class="notranslate">PHP</span> 版本 8.2 及以上，但如果您想使用早期版本的 <span class="notranslate">PHP</span>，您可以尝试该框架的 <a href="https://phphleb.ru/ru/v1/" target="_blank">第一个版本</a>。<br>
+    支持 <span class="notranslate">PHP</span> 8.2 及以上版本。
 </p>
 <p>
     框架的初始版本 2.0.0 于 2024 年 2 月发布。<br>

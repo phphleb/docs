@@ -155,6 +155,14 @@ return [
                                 'zh' => 'WebRotor',
                             ],
                         ],
+                        [
+                            'route' => 'docs.2.0.start.frankenphp.page',
+                            'name' => [
+                                'ru' => 'FrankenPHP',
+                                'en' => 'FrankenPHP',
+                                'zh' => 'FrankenPHP',
+                            ],
+                        ],
                     ],
                 ],
                 [

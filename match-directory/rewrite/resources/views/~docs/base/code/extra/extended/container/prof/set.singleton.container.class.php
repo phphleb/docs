@@ -9,14 +9,14 @@ final class ContainerFactory extends BaseContainerFactory
     {
         // ... //
 
-        if (is_callable(self::$singletons[$id])) {
+        if (self::$singletons[$id] instanceof \Closure) {
             self::$singletons[$id] = self::$singletons[$id]();
         }
         return self::$singletons[$id];
     }
 
     #[\Override]
-    public static function setSingleton(string $id, object|callable|null $value): void
+    public static function setSingleton(string $id, object|null $value): void
     {
         parent::setSingleton($id, $value);
     }

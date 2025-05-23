@@ -12,7 +12,7 @@ use Phphleb\Docs\Src\Paragraph;
     <b><span class="notranslate">HLEB2</span></b> — это вторая версия фреймворка <span class="notranslate">HLEB</span>, полностью изменённая и улучшенная.
 </p>
 <p>
-    Поддерживает <span class="notranslate">PHP</span> версии 8.2 и выше, но если вы хотите использовать более ранние версии <span class="notranslate">PHP</span>, то попробуйте <a href="https://phphleb.ru/ru/v1/" target="_blank">первую версию</a> фреймворка.<br>
+    Поддерживает <span class="notranslate">PHP</span> версии 8.2 и выше.
 </p>
 <p>
     Начальная версия 2.0.0 фреймворка  выпущена в феврале 2024 г.<br>

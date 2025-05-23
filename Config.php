@@ -4,7 +4,7 @@ namespace Phphleb\Docs;
 
 final class Config
 {
-    final public const API_VERSION = 22;
+    final public const API_VERSION = 28;
 
     final public const CACHE_PAGE_SEC = 31_622_400;
 

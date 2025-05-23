@@ -49,7 +49,7 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Link::previousPage('docs.2.0.start.hosting.page', 'Shared hosting'); ?>
 
-<?= Link::nextPage('docs.2.0.routes.page', 'Маршрутизация'); ?><br><br>
+<?= Link::nextPage('docs.2.0.start.frankenphp.page', 'FrankenPHP'); ?><br><br>
 
 <?php insertTemplate('/docs/ru/authors'); ?>
 

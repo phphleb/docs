@@ -51,7 +51,7 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Link::previousPage('docs.2.0.start.hosting.page', '共享主機'); ?>
 
-<?= Link::nextPage('docs.2.0.routes.page', '路由'); ?><br><br>
+<?= Link::nextPage('docs.2.0.start.frankenphp.page', 'FrankenPHP'); ?><br><br>
 
 <?php insertTemplate('/docs/ru/authors'); ?>
 

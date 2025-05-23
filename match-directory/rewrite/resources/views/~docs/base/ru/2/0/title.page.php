@@ -72,6 +72,11 @@ use Phphleb\Docs\Src\Paragraph;
     Асинхронность для shared hosting.
 </p>
 
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.frankenphp.page'); ?>">FrankenPHP</a></b>.
+    Простой сервер для PHP.
+</p>
+
 <?= Paragraph::h2('Маршрутизация') ?>
 
 <p>

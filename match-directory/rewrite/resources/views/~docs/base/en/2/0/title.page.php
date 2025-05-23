@@ -70,6 +70,10 @@ use Phphleb\Docs\Src\Paragraph;
     <b><a href="<?= Link::url('docs.2.0.start.webrotor.page'); ?>">WebRotor</a></b>.
     Asynchrony for shared hosting.
 </p>
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.frankenphp.page'); ?>">FrankenPHP</a></b>.
+    A simple server for PHP.
+</p>
 
 
 <?= Paragraph::h2('Routing') ?>

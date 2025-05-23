@@ -58,6 +58,13 @@ use Phphleb\Docs\Src\Paragraph;
     Despite the fact that the <span class="notranslate">match()</span> expression can contain multiple keys to a value, to avoid duplicating services (and consequently violating the <span class="notranslate">singleton</span> principle), only one should be assigned.
 </p>
 
+<p>
+    Starting from <span class="notranslate">PHP v8.4</span>, you can leverage "lazy objects" support in the container.
+    An object of this kind, when retrieved from the container, won’t be initialized until it’s actually accessed. In the <span class="notranslate">App\Bootstrap\ContainerFactory</span> class, you need to define the service as follows:
+</p>
+
+<?= Code::fromFile('@views/docs/code/container/lazy.load.in.container.class.php', false);  ?>
+
 <?= Paragraph::h2('Creating a Method in the Container') ?>
 
 <p>

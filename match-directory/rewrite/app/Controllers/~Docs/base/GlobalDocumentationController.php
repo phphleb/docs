@@ -14,15 +14,13 @@ class GlobalDocumentationController extends PageController
 {
     public function content(string $page, string $title, string $desc): View
     {
-        $lang = Request::param('lang')->asString();
+        $lang = strtolower(Request::param('lang')->asString());
 
         $this->title = $title;
 
         $this->description = $desc;
 
         $this->showcaseCenterHtml = '<a href="/"><h2>PHP Framework HLEB2</h2></a>';
-
-        $this->showcaseRightHtml = \template('/docs/right.block');
 
         $this->cssResources[] = "/hlresource/docs/v" . Config::API_VERSION . "/css/main";
 
@@ -34,6 +32,8 @@ class GlobalDocumentationController extends PageController
         array_shift($path);
         $version = (int)array_shift($path);
         $subversion = (int)array_shift($path);
+        $endPath = implode('/', $path);
+        $this->showcaseRightHtml = \template('/docs/right.block', ['versions' => $this->getVersions($lang, $endPath, $version, $subversion, $page)]);
 
         $this->metaRows = [
             '<!--Icons-->',
@@ -69,6 +69,60 @@ class GlobalDocumentationController extends PageController
             }
         }
         hl_redirect('404', 404);
-        return '';
     }
+
+    public function getVersions(string $lang, string $endPath, int $version, int $subversion, string $page): array
+    {
+        $dir = Path::getReal("@views/docs/$lang/");
+        $result = [];
+
+        if (!is_dir($dir)) {
+            return $result;
+        }
+
+        $levelOneDirs = array_filter(
+            glob($dir . '*', GLOB_ONLYDIR),
+            function($path) { return is_dir($path); }
+        );
+
+        $versions = [];
+
+        foreach ($levelOneDirs as $lvlOnePath) {
+            $lvlOne = (int)basename($lvlOnePath);
+
+            $levelTwoDirs = array_filter(
+                glob($lvlOnePath . '/*', GLOB_ONLYDIR),
+                function($path) { return is_dir($path); }
+            );
+            $current = [];
+            foreach ($levelTwoDirs as $lvlTwoPath) {
+                $lvlTwo = (int)basename($lvlTwoPath);
+                if ($lvlOne === $version && $lvlTwo === $subversion) {
+                    $current[] = [$lvlOne, $lvlTwo];
+                } else {
+                    if (Path::getReal("@views/docs/$lang/$lvlOne/$lvlTwo/$page.php")) {
+                        $versions[] = [$lvlOne, $lvlTwo];
+                    }
+                }
+            }
+            if ($versions) {
+                usort($versions, function ($a, $b) {
+                    if ($a[0] == $b[0]) {
+                        return $b[1] <=> $a[1];
+                    }
+                    return $b[0] <=> $a[0];
+                });
+            }
+            $versions = array_merge($current, $versions);
+            foreach ($versions as $data) {
+                $version = "{$data[0]}.{$data[1]}";
+                $url = "/{$lang}/{$data[0]}/{$data[1]}/{$endPath}";
+
+                $result[$version] = $url;
+            }
+        }
+
+        return $result;
+    }
+
 }

@@ -8,7 +8,7 @@ use Phphleb\Docs\Src\Paragraph;
 <?= Paragraph::h1('Swoole') ?>
 
 <p>
-    <a href="https://openswoole.com/" target="_blank"><span class="notranslate">Open Swoole</span></a>（以前称为 <span class="notranslate">Swoole</span>）是一个高性能的 PHP 异步子进程执行平台。
+    <a href="https://openswoole.com/" target="blank"><span class="notranslate">Open Swoole</span></a>（原始<span class="notranslate">Swoole</span>扩展的一个分支）是一个高性能的平台，用于在 PHP 中异步执行协程。
 </p>
 <p>
     <span class="notranslate">Swoole</span> 作为一个扩展安装到 <span class="notranslate">PHP</span> 中。

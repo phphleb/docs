@@ -71,6 +71,10 @@ use Phphleb\Docs\Src\Paragraph;
     <b><a href="<?= Link::url('docs.2.0.start.webrotor.page'); ?>">WebRotor</a></b>.
     共享託管的非同步。
 </p>
+<p>
+    <b><a href="<?= Link::url('docs.2.0.start.frankenphp.page'); ?>">FrankenPHP</a></b>。
+    一个简单的 PHP 服务器。
+</p>
 
 <?= Paragraph::h2('路由') ?>
 

@@ -58,6 +58,13 @@ use Phphleb\Docs\Src\Paragraph;
     尽管 <span class="notranslate">match()</span> 表达式可以包含多个键指向一个值，但为了避免服务重复（从而违反 <span class="notranslate">singleton</span> 原则），应只分配一个。
 </p>
 
+<p>
+    从 <span class="notranslate">PHP v8.4</span> 开始，你可以在容器中使用对“延迟对象”的支持。
+    这种类型的对象从容器中获取时不会立即初始化，只有在首次访问时才会初始化。在 <span class="notranslate">App\Bootstrap\ContainerFactory</span> 类中，你需要如下定义服务：
+</p>
+
+<?= Code::fromFile('@views/docs/code/container/lazy.load.in.container.class.php', false);  ?>
+
 <?= Paragraph::h2('在容器中创建方法') ?>
 
 <p>

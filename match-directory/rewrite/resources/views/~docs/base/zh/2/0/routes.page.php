@@ -200,6 +200,15 @@ use Phphleb\Docs\Src\Paragraph;
 
 <?= Code::fromFile('@views/docs/code/routes/match.method.php', false);  ?>
 
+
+<?= Paragraph::h2('Route::alias() 方法') ?>
+
+<p>
+    <span class="notranslate">alias()</span> 方法允许你通过引用现有路由的名称来创建一个新的路由。这个过程包括为新路由分配新的地址，并执行该路由所属分组定义的额外操作。
+</p>
+
+<?= Code::fromFile('@views/docs/code/routes/alias.method.php', false);  ?>
+
 <?= Paragraph::h2('Route::fallback() 方法') ?>
 
 <p>

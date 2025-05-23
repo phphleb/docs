@@ -60,6 +60,13 @@ use Phphleb\Docs\Src\Paragraph;
     Несмотря на то, что выражение <span class="notranslate">match()</span> может содержать несколько ключей к значению, во избежание дублирования сервисов (и как следствие нарушения принципа <span class="notranslate">singleton</span>) назначен должен быть только один.
 </p>
 
+<p>
+    С версии <span class="notranslate">PHP v8.4</span> можно использовать поддержку "ленивых объектов" в контейнере.
+    Такой объект, полученный из контейнера, не инициализирован пока к нему не будет сделано обращение. В классе <span class="notranslate">App\Bootstrap\ContainerFactory</span> для этого нужно указать сервис следующим образом:
+</p>
+
+<?= Code::fromFile('@views/docs/code/container/lazy.load.in.container.class.php', false);  ?>
+
 <?= Paragraph::h2('Создание метода в контейнере') ?>
 
 <p>

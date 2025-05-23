@@ -400,6 +400,25 @@ b > .notranslate, .notranslate > b, a > .notranslate, .notranslate > a {
     margin-bottom: 200px;
 }
 
+.hl-pan-menu-version-content {
+    /*display: inline-block;*/
+    display: none;
+    width: 60px;
+    max-width: 70px;
+    min-width: 50px;
+    height: 47px;
+    padding: 0;
+    margin-left: 0;
+    align-items: right;
+    float: right;
+}
+.hl-pan-menu-version-select {
+    position: relative;
+    height: 30px;
+    width: 54px;
+    top: 14px;
+    background-color: #fff;
+}
 
 @media only screen and (max-width: 1000px) {
     #hl-pan-company-logo {
@@ -407,9 +426,26 @@ b > .notranslate, .notranslate > b, a > .notranslate, .notranslate > a {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .hl-line-gh {
+        display: none;
+    }
+
+    #hl-pan-menu-right-content {
+        width: 120px!important;
+        max-width: 120px!important;
+    }
+
+}
+
 @media only screen and (max-width: 640px) {
     .hl-right-title {
         display: inline-block;
+    }
+
+    #hl-pan-menu-right-content {
+        width: 230px!important;
+        max-width: 230px!important;
     }
 
     #hl-pan-content .hl-footer p {
