@@ -12,7 +12,7 @@ use Phphleb\Docs\Config;
         Tutorial video materials available on <a href="https://www.youtube.com/@php-framework-hleb2" target="_blank">YouTube</a>.
     </p>
     <p>
-        A dedicated <a href="https://plugins.jetbrains.com/plugin/25645-hleb2" target="_blank">plugin</a> for the framework to integrate with the PhpStorm IDE.
+        Special framework plugins for integration with <span class="notranslate"><a href="https://github.com/phphleb/hleb2-vsc-plugin" target="blank">Visual Studio Code</a></span> and <span class="notranslate"><a href="https://github.com/phphleb/hleb2-phpstorm-plugin" target="blank">PhpStorm IDE</a></span>.
     </p>
     <p>
         This instruction site for the <span class="notranslate">HLEB2</span> framework is made using the <span class="hl-nowrap">HLEB2 <span class="notranslate">framework</span>.</span>

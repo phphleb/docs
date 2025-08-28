@@ -12,7 +12,7 @@ use Phphleb\Docs\Config;
     Обучающие видео-материалы на <a href="https://www.youtube.com/@php-framework-hleb2" target="_blank">YouTube</a> и <a href="https://rutube.ru/channel/38328169/" target="_blank">Rutube</a>.
 </p>
 <p>
-    Специальный <a href="https://plugins.jetbrains.com/plugin/25645-hleb2" target="_blank">плагин</a> фреймворка для интеграции с IDE PhpStorm.
+    Специальные плагины фреймворка для интеграции с <span class="notranslate"><a href="https://github.com/phphleb/hleb2-vsc-plugin" target="_blank">Visual Studio Code</a></span> и <span class="notranslate"><a href="https://github.com/phphleb/hleb2-phpstorm-plugin" target="_blank">IDE PhpStorm</a></span>.
 </p>
 <p>
     <a href="https://ocrmnolblog.ru/topic/framework-hleb-and-libraries/questions" target="_blank">Задать вопрос</a> в блоге, который сделан с использованием <span class="hl-nowrap">фреймворка <span class="notranslate">HLEB</span>.</span>
