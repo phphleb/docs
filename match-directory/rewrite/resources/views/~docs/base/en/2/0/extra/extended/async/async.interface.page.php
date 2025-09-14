@@ -10,6 +10,9 @@ use Phphleb\Docs\Src\Paragraph;
     The <span class="notranslate">HLEB2</span> framework provides the capability to perform asynchronous requests, which imposes additional requirements on the code.
     One of the main requirements is to eliminate stored state upon the request's completion.
 </p>
+<p class="hl-info-block">
+    Under the term "asynchrony" this document groups together true asynchronous mode and the conventional <span class="notranslate">long-running</span> mode, since the recommendations for both are identical.
+</p>
 <p>
     Stored state can include current user data, request data cache, various forms of memoization, etc.
 </p>
@@ -21,6 +24,22 @@ use Phphleb\Docs\Src\Paragraph;
     It is necessary to determine which stored states relate to the request data and which pertain to the operation of the application as a whole.
     For example, a computed state for general tariff information won't change from request to request, but the selected tariff for each user needs to be reset. During asynchronous requests, the next request might belong to a different user, making it important to clear information about the previous one.
 </p>
+
+<?= Paragraph::h2('ResetInterface') ?>
+<p>
+    Using <span class="notranslate">ResetInterface</span> provides a modern way to reset the state of services in the framework container asynchronously. This applies only to services stored as singletons and allows you — by adding this interface and its reset method — to clear a service's state and perform other preparations intended for the next request.
+</p>
+<p>
+    For example, in this demonstration logging service, the state of the <span class="notranslate">Monolog</span> logger will be reset according to its own internal implementation of the <span class="notranslate">reset</span> method:
+</p>
+
+<?= Code::fromFile('@views/docs/code/extra/extended/async/interface/default.reset.base.php', false);  ?>
+
+<p>
+    To enable state reset, the <span class="notranslate">ResetInterface</span> interface is added and the <span class="notranslate">reset</span> method is implemented.
+</p>
+
+<?= Paragraph::h2('RollbackInterface') ?>
 <p>
     Modern programming practices discourage the use of a state stored as a static class property, but it is often convenient, and concerns about it arise only when transitioning to asynchronous mode.<br>
     To facilitate this transition, the <span class="notranslate">HLEB2</span> framework provides a special interface <span class="notranslate">RollbackInterface</span> with a single static method <span class="notranslate">rollback</span>.

@@ -10,6 +10,9 @@ use Phphleb\Docs\Src\Paragraph;
     <span class="notranslate">HLEB2</span>框架提供执行异步请求的能力，这对代码提出了额外的要求。
     其中一个主要要求是在请求完成时消除存储的状态。
 </p>
+<p class="hl-info-block">
+    在本文中，“异步”一词同时包含真正的异步模式和常见的<span class="notranslate">long-running</span>模式，因为针对两者的建议相同。
+</p>
 <p>
     存储的状态可以包括当前用户数据、请求数据缓存、各种形式的备忘化等。
 </p>
@@ -21,6 +24,22 @@ use Phphleb\Docs\Src\Paragraph;
     需要确定哪些存储的状态与请求数据有关，哪些与整个应用程序的运行有关。
     例如，一般费率信息的计算状态不会从请求到请求改变，但每个用户选择的费率需要重置。在异步请求时，下一请求可能属于不同用户，因此重要的是清除前一个用户的信息。
 </p>
+
+<?= Paragraph::h2('ResetInterface') ?>
+<p>
+    通过实现<span class="notranslate">ResetInterface</span>，可以在框架容器中以异步方式现代化地重置服务状态。此机制仅适用于以单例（singleton）方式存储的服务；通过添加该接口并实现其 reset 方法，可以清除服务状态并执行为下一个请求做准备的其他操作。
+</p>
+<p>
+    例如，在此演示的日志服务中，<span class="notranslate">Monolog</span> 日志器的状态将根据其内部实现的同名 <span class="notranslate">reset</span> 方法被重置：
+</p>
+
+<?= Code::fromFile('@views/docs/code/extra/extended/async/interface/default.reset.base.php', false);  ?>
+
+<p>
+    为了使状态被重置，需要添加 <span class="notranslate">ResetInterface</span> 接口并实现 <span class="notranslate">reset</span> 方法。
+</p>
+
+<?= Paragraph::h2('RollbackInterface') ?>
 <p>
     现代编程实践不推荐使用存储为类静态属性的状态，但它通常很方便，只有在过渡到异步模式时才需关心这一点。<br>
     为了方便这一转变，<span class="notranslate">HLEB2</span>框架提供了一个特殊的接口<span class="notranslate">RollbackInterface</span>，拥有一个静态方法<span class="notranslate">rollback</span>。
