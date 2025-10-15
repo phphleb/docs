@@ -24,6 +24,12 @@ use Phphleb\Docs\Src\Paragraph;
     It adheres to the recommendations of <span class="notranslate">PSR-1</span>, <span class="notranslate">PSR-2</span>, <span class="notranslate">PSR-3</span>, <span class="notranslate">PSR-4</span>, <span class="notranslate">PSR-7</span>, <span class="notranslate">PSR-11</span>, <span class="notranslate">PSR-12</span>, and <span class="notranslate">PSR-16</span> without mandatory implementation in development.
 </p>
 
+
+<p>
+    If you want to study the framework using an AI model, a unified <a href="/en/2/0/process-me">text version</a> of this guide in <span class="notranslate">Markdown</span> format might be useful to you.
+</p>
+
+
 <?= Paragraph::h2('Purpose') ?>
 
 <p>
@@ -48,11 +54,6 @@ use Phphleb\Docs\Src\Paragraph;
     The framework's code is thoroughly tested with unit tests.
 </p>
 
-<?= Paragraph::h2('Performance') ?>
-
-<p>
-    According to third-party <a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="blank">performance metrics</a>, this framework offers advantages in both speed and operational stability.
-</p>
 
 <?= Paragraph::h2('Projects Based on the Framework') ?>
 

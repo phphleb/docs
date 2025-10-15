@@ -116,14 +116,6 @@ use Phphleb\Docs\Src\Paragraph;
         Preloading is not supported on Windows.
     </p>
 
-<?= Paragraph::h2('Reducing Framework Size') ?>
-
-    <p>
-        When deploying the project for <span class="notranslate">production</span> (target public server), you can reduce the framework size by 30% by removing code comments using a dedicated console command.
-    </p>
-
-    <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console clearing-comment-feature</p>
-
 <?= Link::previousPage('docs.2.0.installation.page', 'Project Installation'); ?>
 
 <?= Link::nextPage('docs.2.0.configuration.page', 'Configuration Setup'); ?><br><br>

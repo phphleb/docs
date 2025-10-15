@@ -25,7 +25,7 @@ use Phphleb\Docs\Src\Paragraph;
     A basic working example:
 </p>
 
-<?= Code::fromFile('@views/docs/code/start/swoole.php');  ?>
+<?= Code::fromFile('@views/docs/code/start/swoole.php', true);  ?>
 
 <p>
     The <span class="notranslate">Swoole</span> server is started with the console command:

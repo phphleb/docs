@@ -24,6 +24,12 @@ use Phphleb\Docs\Src\Paragraph;
     它符合 <span class="notranslate">PSR-1</span>、<span class="notranslate">PSR-2</span>、<span class="notranslate">PSR-3</span>、<span class="notranslate">PSR-4</span>、<span class="notranslate">PSR-7</span>、<span class="notranslate">PSR-11</span>、<span class="notranslate">PSR-12</span> 和 <span class="notranslate">PSR-16</span> 的建议，而不强制在开发中使用。
 </p>
 
+
+<p>
+    如果您想通过神经网络学习框架，统一的<a href="/en/2/0/process-me">文本版本</a>的本说明书的 <span class="notranslate">markdown</span> 格式可能对您有帮助。
+</p>
+
+
 <?= Paragraph::h2('目的') ?>
 
 <p>
@@ -49,11 +55,6 @@ use Phphleb\Docs\Src\Paragraph;
     框架的代码经过单元测试仔细测试。
 </p>
 
-<?= Paragraph::h2('性能表现') ?>
-
-<p>
-    根据第三方<a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="blank">性能指标</a>，该框架在速度和运行稳定性方面都具有优势。
-</p>
 
 <?= Paragraph::h2('基于框架的项目') ?>
 

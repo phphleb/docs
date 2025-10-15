@@ -24,6 +24,10 @@ use Phphleb\Docs\Src\Paragraph;
     Поддерживает рекомендации <span class="notranslate">PSR-1</span>, <span class="notranslate">PSR-2</span>, <span class="notranslate">PSR-3</span>, <span class="notranslate">PSR-4</span>,<span class="notranslate">PSR-7</span>, <span class="notranslate">PSR-11</span>, <span class="notranslate">PSR-12</span>, <span class="notranslate">PSR-16</span> без обязательности их использования в разработке.
 </p>
 
+<p>
+    Если вы хотите изучать фреймворк при помощи нейросети, то вам может пригодиться единая <a href="/en/2/0/process-me">текстовая версия</a> этой инструкции в формате <span class="notranslate">markdown</span>.
+</p>
+
 <?= Paragraph::h2('Предназначение') ?>
 
 <p>
@@ -47,12 +51,6 @@ use Phphleb\Docs\Src\Paragraph;
 </p>
 <p>
     Код фреймворка тщательно протестирован с помощью модульных тестов.
-</p>
-
-<?= Paragraph::h2('Производительность') ?>
-
-<p>
-Согласно сторонним <a href="https://web-frameworks-benchmark.netlify.app/compare?f=hleb2,slim,lumen,yii,laminas,codeigniter4,spiral,laravel,symfony" target="_blank">метрикам производительности</a>, данный фреймворк имеет преимущества как по скорости, так и по стабильности работы.
 </p>
 
 <?= Paragraph::h2('Проекты на основе фреймворка') ?>

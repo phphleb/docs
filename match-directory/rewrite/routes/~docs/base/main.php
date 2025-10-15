@@ -34,6 +34,7 @@ use App\Controllers\Docs\{AboutController,
     InstallationController,
     IntroductionController,
     ModelController,
+    Process\ProcessMeController,
     RouteController,
     SearchController,
     Service\CacheController,
@@ -246,7 +247,6 @@ Route::toGroup()
         ->page('docsv20', ConverterController::class)
         ->name('docs.2.0.service.converter.page');
 
-
     Route::toGroup()
         ->prefix('/extend');
 
@@ -320,3 +320,9 @@ Route::post('/search/data')
     ->controller(SearchDataController::class)
     ->name('docs.search.data')
     ->protect();
+
+
+Route::get('/en/{version}/{subversion}/process-me')
+    ->noDebug()
+    ->controller(ProcessMeController::class)
+    ->name('process.me');

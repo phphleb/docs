@@ -25,7 +25,7 @@ use Phphleb\Docs\Src\Paragraph;
     Here, an explicit address and port have been assigned for local development. Make sure this port is not in use.
 </p>
 <p>
-    Your application will now be accessible at:<br> <a href="http://127.0.0.1:8088" target="blank">http://127.0.0.1:8088</a>
+    Your application will now be accessible at:<br> <a href="http://127.0.0.1:8080" target="blank">http://127.0.0.1:8080</a>
 </p>
 
 <?= Link::previousPage('docs.2.0.start.webrotor.page', 'WebRotor'); ?>

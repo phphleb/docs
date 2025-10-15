@@ -116,13 +116,6 @@ use Phphleb\Docs\Src\Paragraph;
         预加载在Windows上不受支持。
     </p>
 
-<?= Paragraph::h2('减少框架大小') ?>
-
-    <p>
-        部署项目到<span class="notranslate">production</span>（目标公开服务器）时，可以通过使用专用控制台命令删除代码注释将框架大小减少30%。
-    </p>
-
-    <p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console clearing-comment-feature</p>
 
 <?= Link::previousPage('docs.2.0.installation.page', '项目安装'); ?>
 

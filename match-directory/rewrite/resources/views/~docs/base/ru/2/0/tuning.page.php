@@ -115,13 +115,6 @@ use Phphleb\Docs\Src\Paragraph;
     Предзагрузка не поддерживается в Windows.
 </p>
 
-<?= Paragraph::h2('Сокращение размера фреймворка') ?>
-
-<p>
-    При развертывании проекта для <span class="notranslate">production</span> (целевого публичного сервера), вы можете сократить размер файлов фреймворка на 30%, удалив комментарии к коду предназначенной для этого консольной командой.
-</p>
-
-<p class="hl-bash-block"><span class="hl-not-selected notranslate">$</span>php console clearing-comment-feature</p>
 
 <?= Link::previousPage('docs.2.0.installation.page', 'Установка проекта'); ?>
 

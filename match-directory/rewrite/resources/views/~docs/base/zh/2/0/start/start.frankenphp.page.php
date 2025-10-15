@@ -25,7 +25,7 @@ use Phphleb\Docs\Src\Paragraph;
     这里为本地开发环境指定了具体的地址和端口。请确保该端口未被占用。
 </p>
 <p>
-    之后，你的应用将可通过以下地址访问：<br> <a href="http://127.0.0.1:8088" target="blank">http://127.0.0.1:8088</a>
+    之后，你的应用将可通过以下地址访问：<br> <a href="http://127.0.0.1:8080" target="blank">http://127.0.0.1:8080</a>
 </p>
 
 <?= Link::previousPage('docs.2.0.start.webrotor.page', 'WebRotor'); ?>
